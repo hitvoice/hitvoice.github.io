@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vimeo on Hugo tranquilpeak theme</title>
-    <link>/hitvoice.github.io/tags/vimeo/index.xml</link>
+    <link>https://hitvoice.github.io/tags/vimeo/index.xml</link>
     <description>Recent content in Vimeo on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/hitvoice.github.io/tags/vimeo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hitvoice.github.io/tags/vimeo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Video integrations showcase</title>
-      <link>/hitvoice.github.io/Video-integrations-showcase/</link>
+      <link>https://hitvoice.github.io/Video-integrations-showcase/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>/hitvoice.github.io/Video-integrations-showcase/</guid>
+      <guid>https://hitvoice.github.io/Video-integrations-showcase/</guid>
       <description>&lt;p&gt;Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
 &lt;/p&gt;
 

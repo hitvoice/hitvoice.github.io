@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html Elements on Hugo tranquilpeak theme</title>
-    <link>/hitvoice.github.io/tags/html-elements/index.xml</link>
+    <link>https://hitvoice.github.io/tags/html-elements/index.xml</link>
     <description>Recent content in Html Elements on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/hitvoice.github.io/tags/html-elements/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hitvoice.github.io/tags/html-elements/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Elements showcase</title>
-      <link>/hitvoice.github.io/Elements-showcase/</link>
+      <link>https://hitvoice.github.io/Elements-showcase/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>/hitvoice.github.io/Elements-showcase/</guid>
+      <guid>https://hitvoice.github.io/Elements-showcase/</guid>
       <description>&lt;p&gt;Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&amp;rsquo;s simple and elegant.
 &lt;/p&gt;
 
