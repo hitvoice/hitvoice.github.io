@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social on Hugo tranquilpeak theme</title>
-    <link>https://hitvoice.github.io/tags/social/index.xml</link>
+    <link>/tags/social/index.xml</link>
     <description>Recent content in Social on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://hitvoice.github.io/tags/social/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/social/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hidden social section showcase</title>
-      <link>https://hitvoice.github.io/Hidden-social-section-showcase/</link>
+      <link>/Hidden-social-section-showcase/</link>
       <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Hidden-social-section-showcase/</guid>
+      <guid>/Hidden-social-section-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.
 &lt;/p&gt;
 

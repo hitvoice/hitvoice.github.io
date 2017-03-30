@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Features on Hugo tranquilpeak theme</title>
-    <link>https://hitvoice.github.io/categories/features/index.xml</link>
+    <link>/categories/features/index.xml</link>
     <description>Recent content in Features on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://hitvoice.github.io/categories/features/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/features/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Elements showcase</title>
-      <link>https://hitvoice.github.io/Elements-showcase/</link>
+      <link>/Elements-showcase/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Elements-showcase/</guid>
+      <guid>/Elements-showcase/</guid>
       <description>&lt;p&gt;Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&amp;rsquo;s simple and elegant.
 &lt;/p&gt;
 
@@ -104,10 +104,10 @@ sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula
     
     <item>
       <title>Cover image showcase</title>
-      <link>https://hitvoice.github.io/Cover-image-showcase/</link>
+      <link>/Cover-image-showcase/</link>
       <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Cover-image-showcase/</guid>
+      <guid>/Cover-image-showcase/</guid>
       <description>&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.
@@ -122,10 +122,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae v
     
     <item>
       <title>highlighted code showcase</title>
-      <link>https://hitvoice.github.io/highlighted-code-showcase/</link>
+      <link>/highlighted-code-showcase/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/highlighted-code-showcase/</guid>
+      <guid>/highlighted-code-showcase/</guid>
       <description>&lt;p&gt;Tranquilpeak Hugo theme have its own theme to highlight source code. It&amp;rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
 &lt;/p&gt;
 
@@ -2109,10 +2109,10 @@ func main() {
     
     <item>
       <title>Hidden social section showcase</title>
-      <link>https://hitvoice.github.io/Hidden-social-section-showcase/</link>
+      <link>/Hidden-social-section-showcase/</link>
       <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Hidden-social-section-showcase/</guid>
+      <guid>/Hidden-social-section-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.
 &lt;/p&gt;
 
@@ -2121,10 +2121,10 @@ func main() {
     
     <item>
       <title>Hidden tag section showcase</title>
-      <link>https://hitvoice.github.io/Hidden-tag-section-showcase/</link>
+      <link>/Hidden-tag-section-showcase/</link>
       <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Hidden-tag-section-showcase/</guid>
+      <guid>/Hidden-tag-section-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.
 &lt;/p&gt;
 
@@ -2133,10 +2133,10 @@ func main() {
     
     <item>
       <title>Hidden pagination showcase</title>
-      <link>https://hitvoice.github.io/Hidden-pagination-showcase/</link>
+      <link>/Hidden-pagination-showcase/</link>
       <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Hidden-pagination-showcase/</guid>
+      <guid>/Hidden-pagination-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the pagination is hidden.
 &lt;/p&gt;
 
@@ -2145,10 +2145,10 @@ func main() {
     
     <item>
       <title>Video integrations showcase</title>
-      <link>https://hitvoice.github.io/Video-integrations-showcase/</link>
+      <link>/Video-integrations-showcase/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Video-integrations-showcase/</guid>
+      <guid>/Video-integrations-showcase/</guid>
       <description>&lt;p&gt;Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
 &lt;/p&gt;
 
@@ -2171,10 +2171,10 @@ func main() {
     
     <item>
       <title>中文測試</title>
-      <link>https://hitvoice.github.io/chinese-test/</link>
+      <link>/chinese-test/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/chinese-test/</guid>
+      <guid>/chinese-test/</guid>
       <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.
 &lt;/p&gt;
 
@@ -2195,20 +2195,20 @@ func main() {
     
     <item>
       <title>Image gallery showcase</title>
-      <link>https://hitvoice.github.io/Image-gallery-showcase/</link>
+      <link>/Image-gallery-showcase/</link>
       <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/Image-gallery-showcase/</guid>
+      <guid>/Image-gallery-showcase/</guid>
       <description>&lt;p&gt;And here is the image gallery!
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>日本語テスト</title>
-      <link>https://hitvoice.github.io/japanese-test/</link>
+      <link>/japanese-test/</link>
       <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://hitvoice.github.io/japanese-test/</guid>
+      <guid>/japanese-test/</guid>
       <description>&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.
 &lt;/p&gt;
 
