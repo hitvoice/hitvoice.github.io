@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag Plugins on Hugo tranquilpeak theme</title>
-    <link>/tags/tag-plugins/index.xml</link>
+    <link>https://hitvoice.github.io/tags/tag-plugins/index.xml</link>
     <description>Recent content in Tag Plugins on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/tag-plugins/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hitvoice.github.io/tags/tag-plugins/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tags plugins showcase</title>
-      <link>/2014/10/tags-plugins-showcase/</link>
+      <link>https://hitvoice.github.io/2014/10/tags-plugins-showcase/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/10/tags-plugins-showcase/</guid>
+      <guid>https://hitvoice.github.io/2014/10/tags-plugins-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how tag plugins are displayed. See &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags&#34;&gt;docs&lt;/a&gt; for more info.
 &lt;/p&gt;
 

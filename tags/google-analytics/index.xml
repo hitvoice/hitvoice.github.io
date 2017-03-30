@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Analytics on Hugo tranquilpeak theme</title>
-    <link>/tags/google-analytics/index.xml</link>
+    <link>https://hitvoice.github.io/tags/google-analytics/index.xml</link>
     <description>Recent content in Google Analytics on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hitvoice.github.io/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Welcome to Tranquilpeak 0.2.2</title>
-      <link>/2015/06/welcome-to-tranquilpeak-0.2.2/</link>
+      <link>https://hitvoice.github.io/2015/06/welcome-to-tranquilpeak-0.2.2/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/06/welcome-to-tranquilpeak-0.2.2/</guid>
+      <guid>https://hitvoice.github.io/2015/06/welcome-to-tranquilpeak-0.2.2/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://hitvoice.github.io/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;
 Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;!-- toc --&gt;&lt;/p&gt;
 
@@ -27,7 +27,7 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;p&gt;A gorgeous responsive theme for Hugo blog framework&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://tranquilpeak.kakawait.com&#34;&gt;&lt;img src=&#34;/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tranquilpeak.kakawait.com&#34;&gt;&lt;img src=&#34;https://hitvoice.github.io/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;alpha-beta-versions&#34;&gt;Alpha/Beta versions&lt;/h2&gt;
 
