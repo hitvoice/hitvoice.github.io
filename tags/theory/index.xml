@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Runqi Yang&#39;s Blog</title>
-    <link>https://hitvoice.github.io/</link>
-    <description>Recent content on Runqi Yang&#39;s Blog</description>
+    <title>Theory on Runqi Yang&#39;s Blog</title>
+    <link>https://hitvoice.github.io/tags/theory/</link>
+    <description>Recent content in Theory on Runqi Yang&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>runqiyang@gmail.com (Runqi Yang)</managingEditor>
     <webMaster>runqiyang@gmail.com (Runqi Yang)</webMaster>
     <lastBuildDate>Wed, 19 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hitvoice.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hitvoice.github.io/tags/theory/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <author>runqiyang@gmail.com (Runqi Yang)</author>
       <guid>https://hitvoice.github.io/post/nn/</guid>
       <description>&lt;p&gt;This is a note on neural networks with plenty of details and recent advances on regularizations, architechture design and a lot more.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Pratical Cheatsheet for Python Data Analysis</title>
-      <link>https://hitvoice.github.io/post/python/</link>
-      <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
-      <author>runqiyang@gmail.com (Runqi Yang)</author>
-      <guid>https://hitvoice.github.io/post/python/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s not just another cheatsheet. It only lists most frequent and important methods in a machine learning project with CAUTIONS and TIPS. It also covers some other useful tools like bcolz and Jupyter notebook widgets.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

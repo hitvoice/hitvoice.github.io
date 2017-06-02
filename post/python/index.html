@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Pratical Cheatsheet for Python Data Analysis</title>
+  <meta property="og:title" content="Pratical Cheatsheet for Python Data Analysis" />
+  <meta name="twitter:title" content="Pratical Cheatsheet for Python Data Analysis" />
+  <meta name="description" content="Numpy/Pandas/Matplotlib/Seaborn">
+  <meta property="og:description" content="Numpy/Pandas/Matplotlib/Seaborn">
+  <meta name="twitter:description" content="Numpy/Pandas/Matplotlib/Seaborn">
+  <meta name="author" content="Runqi Yang"/>
+  <link href='https://hitvoice.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://hitvoice.github.io/img/me.jpg" />
+  <meta name="twitter:image" content="https://hitvoice.github.io/img/me.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://hitvoice.github.io/post/python/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Runqi Yang&#39;s Blog" />
+
+  <meta name="generator" content="Hugo 0.21" />
+  <link rel="canonical" href="https://hitvoice.github.io/post/python/" />
+  <link rel="alternate" href="https://hitvoice.github.io/index.xml" type="application/rss+xml" title="Runqi Yang&#39;s Blog">
+  <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://hitvoice.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://hitvoice.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://hitvoice.github.io/css/highlight.min.css" />
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-100355759-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://hitvoice.github.io">Runqi Yang&#39;s Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Highlight</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/nn/">Neural Network</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/resume/index.html">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Runqi Yang&#39;s Blog" href="https://hitvoice.github.io">
+            <img class="avatar-img" src="https://hitvoice.github.io/img/me.jpg" alt="Runqi Yang&#39;s Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Runqi Yang&#39;s Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Pratical Cheatsheet for Python Data Analysis</h1>
+                
+                  
+                    <h2 class="post-subheading">Numpy/Pandas/Matplotlib/Seaborn</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on December 21, 2016
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>It&rsquo;s not just another cheatsheet. It only lists most frequent and important methods in a machine learning project with CAUTIONS and TIPS. It also covers some other useful tools like bcolz and Jupyter notebook widgets.</p>
+
+<p></p>
+
+<h2 id="numpy">NumPy</h2>
+
+<pre><code class="language-python">import numpy as np
+</code></pre>
+
+<blockquote>
+<p>Attention: When assigning a float value to an integer array, the value will be rounded without a warning!</p>
+</blockquote>
+
+<h3 id="creating-numpy-arrays">Creating NumPy Arrays</h3>
+
+<p><strong>from python list</strong></p>
+
+<pre><code class="language-python">np.array([1,2,3]) # 1-d
+np.array([[1,2,3],[4,5,6],[7,8,9]]) # 2-d
+np.asarray(arr) # convert python list to array, but pass np.array through without copy 
+arr.tolist() # convert to (possibly nested) python list. Don't use `list(arr)`!
+</code></pre>
+
+<p><strong>from built-in method</strong></p>
+
+<pre><code class="language-python">np.arange(0,10) # [0,10)
+np.arange(0,11,2) # array([0,  2,  4,  6,  8, 10])
+np.linspace(2.0, 3.0, num=5) # [2., 2.25, 2.5, 2.75, 3.]
+np.linspace(2.0, 3.0, num=5, endpoint=False) # [2., 2.2, 2.4, 2.6, 2.8]
+np.zeros(3) # 3 x 1
+np.empty_like(x) # matrix with the same dimensions as 'x' with all 0s.
+np.ones((3,3)) # 3 x 3 noticed that a tuple should be used
+np.full((2,2), 7) # array([[7,7],[7,7]])
+np.tile(x,(2,1)) # stacking multiple copies
+np.linspace(0,10,3) # array([  0.,   5.,  10.])
+np.eye(4) # 4 x 4 identity matrix
+np.random.rand(2,2) # uniform [0,1)
+np.random.randn(2,2) # standard normal
+np.random.randint(1,100) # 1 random number in [1,100)
+np.random.randint(1,100,(2,2)) # 2x2 random numbers in [1,100)
+np.random.permutation(arr) # not in-place
+np.random.choice(arr, 10) # random sampling
+np.indices((3,3)) # array([[[0, 0, 0], [1, 1, 1], [2, 2, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]]])
+</code></pre>
+
+<p><strong>from existing arrays</strong></p>
+
+<pre><code class="language-python">np.hstack([a,b,c]) # left-middle-right. attention: a vector is by default a row vector
+np.vstack([a,b,c]) # up-middle-down
+np.concatenate([a,b]) # === np.vstack [(3,4),(3,4)]=&gt;(6,4)
+np.concatenate([a,b],axis=1) # === np.hstack [(3,4),(3,4)]=&gt;(3,8)
+np.stack([a,b]) # [(3,4),(3,4)]=&gt;(2,3,4)
+np.stack([a,b], axis=1) # [(3,4),(3,4)]=&gt;(3,2,4)
+np.stack([a,b], axis=2) # [(3,4),(3,4)]=&gt;(3,4,2)
+</code></pre>
+
+<h3 id="file-io">file IO</h3>
+
+<pre><code class="language-python">assert filename.endswith('.npz')
+# save to disk
+np.savez(filename, A=arr1, B=arr2)
+np.savetxt(filename, arr, fmt='%d,%.5f', header='id,value', comments='') 
+# load from disk
+loader = np.load(filename)
+arr1 = loader['A']
+arr2 = loader['B']
+# efficient compressed IO
+import bcolz
+def save_array(fname, arr):
+    c=bcolz.carray(arr, rootdir=fname, mode='w')
+    c.flush()
+
+def load_array(fname):
+    return bcolz.open(fname)[:]
+</code></pre>
+
+<h3 id="editing">Editing</h3>
+
+<pre><code class="language-python">s = np.array([1,3,4])
+s = np.insert(s, 1, 2) # return [1,2,3,4]
+s = np.append(s, 5) # return [1,3,4,5]
+
+s = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+s = np.delete(s, 1, axis=0) # [[1,2,3,4],[9,10,11,12]]
+</code></pre>
+
+<h3 id="indexing">Indexing</h3>
+
+<p>Similar to MATLAB indexing. Index using a np.array with type bool. (using python native array won’t work)</p>
+
+<pre><code class="language-python">a = np.array([[1,2], [3, 4], [5, 6]])
+# WARNING: be careful when using a[a&gt;2]=2 in functions, use `np.where` instead
+a[a &gt; 2] # [3 4 5 6]
+a[(a&lt;2) | (a&gt;6)] # use &amp; | , don't forget `()`
+a[~np.isnan(a)]
+</code></pre>
+
+<h3 id="attributes-and-methods">Attributes and Methods</h3>
+
+<pre><code class="language-python">arr = np.arange(21)
+# methods
+arr.reshape(3,7)# == arr.reshape(3,-1) == arr.reshape(-1,7), vector is filled in each row
+arr.flatten() # [[1,2], [3,4]] =&gt; [1, 2, 3, 4]
+arr.flatten('F')  # [[1,2], [3,4]] =&gt; [1, 3, 2, 4]
+arr.max()
+arr.argmax()
+arr.min()
+arr.argmin()
+arr.quantile(.75)
+arr.clip(min=0.05,max=0.95) # clipping values to make them lie within [0.05, 0.95]
+arr.astype(int) # convert element type, other types: np.float32 np.float64
+arr.flatten() # shape: (1000,1) -&gt; (1000,), usually following &quot;reshape&quot;
+
+# attributes
+arr.shape
+arr.dtype # don't write to this value, use &quot;astype&quot;
+arr.size # total number of elements === np.prod(arr.shape)
+</code></pre>
+
+<h3 id="operations">Operations</h3>
+
+<p><strong>arithmetic</strong></p>
+
+<p>+,-,*,/,** with array or scalar.</p>
+
+<p><strong>universal</strong></p>
+
+<pre><code class="language-python">np.sum(arr) # sum up all elements，'axis=0' sum by column ⬆️⬇️, 'axis=1' sum by row ⬅️➡️
+# usually use with `reshape`: np.sum(arr, axis=0).reshape((-1,1))
+np.sqrt(arr)
+np.exp(arr)
+np.log(arr)
+np.max(arr)
+np.sin(arr)
+np.dot(A,B) # matrix dot product, or A.dot(B)
+
+np.partition(arr, 3)[3] # 4th-min
+np.percentile(arr, [25,50,75], axis=0) # with interpolation
+
+np.count_nonzero(arr)
+np.isnan(arr)
+np.unique(arr)
+
+np.array_equal(arr1, arr2) # True if two arrays have the same shape and elements
+np.allclose(arr1, arr2) # True if 2 arrays are nearly the same (due to numerical issues)
+
+np.argwhere(arr &lt; 0) # position of target elements. e.g. [[-1, 1],[1,-1]] =&gt; [[0,0], [1,1]]
+np.where(arr&gt;10, 10, arr) # a two-way mapping
+np.where(arr, 1, 0) # binarize data
+np.where(arr&gt;10) # equvilant to np.argwhere(arr&gt;10).T
+np.apply_along_axis(func1d, axis, arr) # apply function taking 1d-arr as input along axis
+np.vectorize(ufunc)(arr) # apply element-wise function (transformation) to array
+
+np.einsum('xyz-&gt;zxy', arr) # swap axis (higher dimension transpose)
+np.expand_dims(arr, axis=0) # shape: (3,4)-&gt;(1,3,4)
+np.squeeze(arr) # or arr.squeeze(), shape: (1,3,4)-&gt;(3,4)
+np.flip(arr, axis=0) # inverse the array
+np.argsort(arr)
+</code></pre>
+
+<p><strong>matrix</strong></p>
+
+<pre><code class="language-python">A.dot(B)
+A.T # transpose, taking transpose of a vector does nothing.
+</code></pre>
+
+<p><strong>broadcasting</strong></p>
+
+<pre><code class="language-python"># example: normalize each row 
+# (notice: in sparse matrix this should be done by diag construction)
+x = np.array([[1, 2, 7], [30, 20, 50], [.04, .03, .03]])
+s = np.sum(x, axis=1).reshape((-1,1))
+x = x/s
+</code></pre>
+
+<h2 id="pandas">Pandas</h2>
+
+<pre><code class="language-python">import pandas as pd
+from numpy.random import randn
+df = pd.DataFrame(randn(5,4),index='A B C D E'.split(),columns='W X Y Z'.split())
+</code></pre>
+
+<blockquote>
+<p>Attention: when shuffling a DataFrame or doing any cross-row transformation, remember to use <code>​df.reset_index(inplace=True)</code> to erase all the original ids.</p>
+</blockquote>
+
+<h3 id="io">IO</h3>
+
+<pre><code class="language-python">df.index.name = 'idx'
+df.to_csv('example.csv', index=False) # header=False
+df = pd.read_csv('example.csv')
+df = pd.read_csv('example.csv', header=None); df.columns = ['col1', 'col2', 'col3']
+df = pd.read_csv(parse_dates=['date_col'], infer_datetime_format=True)
+# datetime columns can be sliced as:
+df[(df['date'] &gt; '2016-6-1') &amp; (df['date'] &lt;= '2016-6-10')]
+
+df.set_index('idx', inplace=True)
+df.reset_index(inplace=True)
+
+df.to_excel('excel.xlsx',sheet_name='Sheet1',index=False)
+pd.read_excel('excel.xlsx',sheetname='Sheet1') # no '_'
+
+# print entire dataframe or series
+print(df.to_string())
+
+# convert to numpy array
+df.as_matrix()
+# columns not in df will not appear (unlike `.loc` which will result in new NaN columns)
+df.as_matrix(columns=['X','Y']) 
+
+</code></pre>
+
+<p>Database IO：<a href="http://www.sqlalchemy.org">SQLAlchemy</a>，<a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_sql.html#pandas.read_sql">pandas.read_sql</a></p>
+
+<p>Reading JSON files：<a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/generated/pandas.read_json.html">pd.read_json</a></p>
+
+<h3 id="series">Series</h3>
+
+<pre><code class="language-python">s = pd.Series([1,2,3,4],index = ['USA', 'Germany','USSR', 'Japan']) # or initialize with dict
+s['USA']
+s.to_frame(name='ColName') # convert to one-column DataFrame
+# when applying the following functions to DataFrames, they apply on each column.
+# they can also be applied to groupby objects. # df.groupby('colX').sum(), colX become index
+s.mean()
+s.std()
+s.min()
+s.max()
+s.abs()
+s.count()
+s.cumsum()
+s.describe()
+s.isnull().sum()
+s.notnull().sum()
+s.unique()
+s.nunique() # number of unique values
+s.duplicated(keep='first') # or 'last', return duplicated items
+s.value_counts() # sorted in descending order: s.value_counts().head(10)
+s.value_counts(sort=False).sort_index() # sorted by index instead of counts
+s.value_counts(normalize=True)
+s.map({'female':0, 'male':1}) # not in-place, can be used in feature extraction
+s.map(len)
+tqdm.pandas();s.progress_map(func) # can see a progress bar
+s.astype(str)
+# set operations
+np.intersect1d(s1.values, s2.values)
+np.union1d(s1.values, s2.values)
+np.setdiff1d(s1.values, s2.values)
+np.setxor1d(s1.values, s2.values) # sorted, unique values that are in only one input array.
+</code></pre>
+
+<h3 id="dataframes">DataFrames</h3>
+
+<p>Be careful with chained indexing (see <a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy">this</a>). If the warning is false positive and you&rsquo;re sure about it, use <code>pd.options.mode.chained_assignment = None</code>​.</p>
+
+<pre><code class="language-python">df = pd.DataFrame(np.random.randn(5,4),index='A B C D E'.split(),columns='W X Y Z'.split())
+# selecting
+df[['W','Z']] # select columns
+df.loc['A'] # select rows by name of index, return row as Series object
+df.iloc[2] # select rows by indexing numbers
+df.loc[['A','B'], ['W','Y']] # select rows and columns (A, W) &amp; (B, Y)
+df = df.loc[:, ['W','Y','A','B']] # reorder columns
+# `.ix` can be `loc` or `iloc`. do not use it for indexing to avoid unexpected results.
+
+df[df['W']&gt;0] # results in rows ABDE
+df[(df['W']&gt;0) &amp; (df['Y'] &gt; 1)] # &amp; |
+df[df.index &lt; 100]
+df.sample(10, random_state=101)
+
+# editing
+df['new'] = df['W'] + df['Y'] # create a new column
+df.drop('new',axis=1) # remove a column, not in-place
+df.drop('new',axis=1,inplace=True) # the same as `del df['new']`
+df.drop('E',axis=0)
+df = df.drop(df[df['W']&lt;0].index) # equiv to `df = df[df['W']&gt;=0]`
+
+df.reset_index() # reset to default 0,1...n index
+df['States'] = 'CA NY WY OR CO'.split()
+df.set_index('States',inplace=True)
+df.reindex(np.random.permutation(df.index)) # shuffle the DataFrame rows (not in-place)
+df[~df.index.duplicated(keep='first')] # remove duplicated indices
+df[df.duplicated('some_column',keep=False)].sort_values(by='some_column') #see duplicated rows
+df.transpose()
+
+df.rename(columns={'A':'a','W':'w'}, inplace=True) # rename columns
+df.rename(index=lambda x:x+1, inplace=True) # rename indices
+
+# iterate
+for index, row in df.iterrows():
+  print(row['A'], row['B'])
+</code></pre>
+
+<h3 id="operations-1">operations</h3>
+
+<pre><code class="language-python">df.head(5)
+df.info()
+df.columns
+df.index
+df.sort_values(by='X', inplace=True, ascending=False) 
+df[['X','Y']].corr() # correlation matrix
+df.apply(lambda x: x.max() - x.min()) # reduce to a Series
+df.apply(np.abs) # apply element-wise. Use 'applymap' to force element-wise operation
+df.apply(lambda x: x['X']-x['Y'], axis=1) # row-wise, passes a Series object, returns a Series
+tqdm.pandas();df.progress_apply(func) # can see a progress bar
+df.where(df&gt;0, arr) # if condition is not satified(&lt;0), replace by elements in array arr.
+</code></pre>
+
+<h3 id="special-creation">special creation</h3>
+
+<pre><code class="language-python"># cross table
+pd.crosstab(df['X'], df['Y'], margins=True) # count row totals and column totals
+
+# one-hot (dummy) variable
+pd.get_dummies(train['Sex'], drop_first=True) # `drop_first` use n-1 bits to encode n classes
+pd.get_dummies(train['Sex'], prefix='Sex')
+# pivot table
+data = {'A':['foo','foo','foo','bar','bar','bar'],
+     'B':['one','one','two','two','one','one'],
+       'C':['x','y','x','y','x','y'],
+       'D':[1,3,2,5,4,1]}
+df = pd.DataFrame(data)
+# NaN will appear in the pivot table where there're no value
+df.pivot_table(values=['D'],index=['A', 'B'],columns=['C']) 
+# the average will be taken when multiple values are mapped to one cell
+df.pivot_table(values=['D'],index=['A'],columns=['C']) 
+
+groupby = df.groupby('key')
+for key, g_df in groupby:
+  pass
+g_df = groupby.get_group('key')
+</code></pre>
+
+<h3 id="handle-missing-data">handle missing data</h3>
+
+<pre><code class="language-python">df.dropna() # remove rows containing missing data
+df.dropna(subset=['X', 'Z']) # consider only these columns
+df.dropna(axis=1) # drop columns
+df.dropna(thresh=2, inplace=True) # keep rows with at least 2 non-NA values
+df['X'].fillna(value=df['X'].mean())
+</code></pre>
+
+<h3 id="multiple-frames">multiple frames</h3>
+
+<pre><code class="language-python">pd.concat([df1,df2,df3])
+
+# default inner, no NaNs. If there's multiple keys, values equal on each key will be kept.
+pd.merge(left, right, on=['key1', 'key2']) 
+# the result contains all keys, NaNs may appear in both sides
+pd.merge(left, right, how='outer', on=['key1', 'key2']) 
+# the result contains keys in the left, NaNs may appear in right side.
+pd.merge(left, right, how='left', on=['key1', 'key2'])
+# the result contains keys in the right, NaNs may appear in left side.
+pd.merge(left, right, how='right', on=['key1', 'key2'])
+# if the columns are named differently. Not Recommended. Do rename first.
+pd.merge(left, right, left_on='key1', right_on='key2')
+
+left.join(right) # base on index, default 'left'
+left.join(right, how='outer')
+</code></pre>
+
+<h2 id="matplotlib">matplotlib</h2>
+
+<pre><code class="language-python">import matplotlib.pyplot as plt
+</code></pre>
+
+<p><code>%matplotlib inline</code> if you&rsquo;re in ipython notebook, otherwise use <code>plt.show()</code> at the end.</p>
+
+<p>use <code>plt.savefig('filename.png')</code> to save your figure to disk.</p>
+
+<h3 id="single-chart">single chart</h3>
+
+<pre><code class="language-python">plt.plot(x, y, 'r') # 'r' is the color red
+plt.xlabel('X Axis Title Here')
+plt.ylabel('Y Axis Title Here')
+plt.title('String Title Here')
+</code></pre>
+
+<h3 id="multiple-charts">multiple charts</h3>
+
+<pre><code class="language-python">plt.subplot(1,2,1)
+plt.plot(x, y, 'r--') # More on color options later
+plt.subplot(1,2,2)
+plt.plot(y, x, 'g*-');
+</code></pre>
+
+<h3 id="get-objects">get objects</h3>
+
+<p>(auto)</p>
+
+<pre><code class="language-python">fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(8,4)) # figsize can be omitted
+</code></pre>
+
+<p>(manual)</p>
+
+<pre><code class="language-python">fig = plt.figure(figsize=(8,4)) # figsize can be omitted
+axes1 = fig.add_axes([0.1, 0.1, 0.8, 0.8]) # main axes
+axes2 = fig.add_axes([0.2, 0.5, 0.4, 0.3]) # inset axes
+</code></pre>
+
+<p>(get current)</p>
+
+<pre><code class="language-python">fig = plt.gcf()
+ax = plt.gca()
+# or
+fig, ax = plt.subplots()
+</code></pre>
+
+<h3 id="methods">methods</h3>
+
+<pre><code class="language-python">ax.plot(x, y, 'b.-', label='A')
+ax.plot([-1,10],[0.95,0.95],'r-') # draw a horizontal line
+#                        line width, style, transparency
+ax.plot(x2, y2, color='blue', lw=3, ls='--', alpha=0.5, label='B') 
+ax.legend(['name1','name2'], loc=1) # or `loc='upper right'`
+ax.set_xlabel('xlabel')
+ax.set_ylabel('ylabel')
+ax.set_title('title')
+# legend code:
+# best -- 0
+# upper right -- 1
+# upper left -- 2
+# lower left -- 3
+# lower right -- 4
+# right -- 5
+# center left -- 6
+# center right -- 7
+# lower center -- 8
+# upper center -- 9
+# center -- 10
+
+ax.axis('tight') # auto
+ax.set_xlim([2, 5]) # manual
+ax.set_ylim([0, 60])
+ax.set_yscale('log')
+
+# use LaTeX formatted labels
+# see more in http://matplotlib.org/api/ticker_api.html
+ax.set_xticks([1, 2, 3, 4, 5])
+ax.set_xticklabels([r'$\alpha$', r'$\beta$', r'$\gamma$', r'$\delta$', r'$\epsilon$'], fontsize=18)
+yticks = [0, 50, 100, 150]
+ax.set_yticks(yticks)
+ax.set_yticklabels([&quot;$%.1f$&quot; % y for y in yticks], fontsize=18); 
+
+ax.grid(True)
+ax.grid(color='b', alpha=0.5, linestyle='dashed', linewidth=0.5)
+ax.text(0.15, 0.2, r&quot;$y=x^2$&quot;, fontsize=20, color=&quot;blue&quot;) # text annotation
+</code></pre>
+
+<pre><code class="language-python">fig.savefig(&quot;filename.png&quot;, dpi=200)
+</code></pre>
+
+<h3 id="histagram">histagram</h3>
+
+<p><a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">documentation</a></p>
+
+<pre><code class="language-python">counts, boundries, _ = plt.hist(arr) # auto mode
+plt.hist(arr, bins=50)
+plt.hist(arr, bins=np.arange(arr.min, arr.max()+2, 5)) # set boundry [l,r)
+plt.hist(arr, log=True) # log scale on y
+plt.hist(arr, range=(min_val, max_val)) # ignore values outside the range
+# If data is out of bounds it will be added to the nearest bin, be careful!
+# Available auto bin size estimators: https://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram.html
+
+# if the data is discrete, use the following in Pandas:
+column.value_counts().plot.bar()
+</code></pre>
+
+<h2 id="seaborn">seaborn</h2>
+
+<p><a href="http://seaborn.pydata.org">homepage</a></p>
+
+<pre><code class="language-python">import seaborn as sns
+%matplotlib inline
+
+tips = sns.load_dataset('tips')
+flights = sns.load_dataset('flights')
+iris = sns.load_dataset('iris')
+</code></pre>
+
+<h3 id="distribution-plots">distribution plots</h3>
+
+<div align="center">
+<img src="/img/python/seaborn1.png" height="400" weight="400">
+</div>
+
+<pre><code class="language-python">sns.distplot(tips['total_bill'])
+sns.distplot(tips['total_bill'],kde=False,bins=30)
+
+sns.jointplot(x='total_bill',y='tip',data=tips,kind='scatter')
+sns.jointplot(x='total_bill',y='tip',data=tips,kind='hex') # hex areas
+sns.jointplot(x='total_bill',y='tip',data=tips,kind='reg') # regression
+
+# pairwise relationships across an entire dataframe for the *numerical* columns
+sns.pairplot(tips) 
+# color hue for categorical columns
+sns.pairplot(tips, hue='sex',palette='coolwarm')
+
+sns.kdeplot(tips['total_bill']) # Kernel Density Estimation plots
+sns.rugplot(tips['total_bill']) # a dash mark for every point on a univariate distribution
+</code></pre>
+
+<h3 id="categorical-plots">categorical plots</h3>
+
+<div align="center">
+<img src="/img/python/seaborn2.png" height="400" weight="400">
+</div>
+
+<pre><code class="language-python">sns.barplot(x='sex',y='total_bill',data=tips)
+sns.barplot(x='sex',y='total_bill',data=tips,estimator=np.std)
+sns.countplot(x='sex',data=tips)
+
+# The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution, except for points that are determined to be “outliers” using a method that is a function of the inter-quartile range.
+sns.boxplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips, palette='rainbow')
+# include another categorical variable
+sns.boxplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, hue=&quot;smoker&quot;, data=tips, palette=&quot;coolwarm&quot;)
+# for entire dataframe
+sns.boxplot(data=tips,palette='rainbow',orient='h')
+
+# the violin plot features a kernel density estimation of the underlying distribution.
+sns.violinplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips,palette='rainbow')
+# include another categorical variable, parallel
+sns.violinplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips, hue='sex',palette='Set1')
+# non-symetric
+sns.violinplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips,hue='sex',split=True,palette='Set1')
+
+# show all observations (not for huge amount of data!)
+sns.stripplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips) # in a vertical line
+sns.stripplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips,jitter=True) # not all overlapped
+sns.stripplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips,jitter=True,hue='sex',palette='Set1')
+sns.stripplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips,jitter=True,hue='sex',palette='Set1',split=True) # split into 2 vertical lines
+sns.swarmplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips) # not overlapping at all
+sns.swarmplot(x=&quot;day&quot;, y=&quot;total_bill&quot;,hue='sex',data=tips, palette=&quot;Set1&quot;, split=True)
+# the two can be combined:
+sns.violinplot(x=&quot;tip&quot;, y=&quot;day&quot;, data=tips,palette='rainbow')
+sns.swarmplot(x=&quot;tip&quot;, y=&quot;day&quot;, data=tips,color='black',size=3)
+</code></pre>
+
+<h3 id="matrix-plots">matrix plots</h3>
+
+<pre><code class="language-python">
+sns.heatmap(tips.corr())
+sns.heatmap(tips.corr(),cmap='coolwarm',annot=True) # will show values on the plot
+pv = flights.pivot_table(values='passengers',index='month',columns='year')
+sns.heatmap(pv)
+sns.heatmap(pv,cmap='magma',linecolor='white',linewidths=1)
+
+sns.clustermap(pv) # similar rows and columns will be put together
+sns.clustermap(pvflights,cmap='coolwarm',standard_scale=1) # normalize to [0,1]
+</code></pre>
+
+<h3 id="regression-plots">regression plots</h3>
+
+<pre><code class="language-python">sns.lmplot(x='total_bill',y='tip',data=tips)
+sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex')
+sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex',palette='coolwarm')
+sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex',palette='coolwarm',
+           markers=['o','v'],scatter_kws={'s':100}) # size:100
+           # details see: http://matplotlib.org/api/markers_api.html
+sns.lmplot(x='total_bill',y='tip',data=tips,col='sex') # two seperate plots
+sns.lmplot(x=&quot;total_bill&quot;, y=&quot;tip&quot;, row=&quot;sex&quot;, col=&quot;time&quot;,data=tips) # four
+sns.lmplot(x='total_bill',y='tip',data=tips,col='day',hue='sex',palette='coolwarm',
+          aspect=0.6,size=8)
+</code></pre>
+
+<h3 id="grids">grids</h3>
+
+<pre><code class="language-python"># general version of &quot;pairplot&quot;
+g = sns.PairGrid(iris)
+g.map_diag(plt.hist)
+g.map_upper(plt.scatter)
+g.map_lower(sns.kdeplot)
+
+g = sns.FacetGrid(tips, col=&quot;time&quot;,  row=&quot;smoker&quot;)
+g = g.map(plt.hist, &quot;total_bill&quot;) # draw histograms for each catagory
+g = sns.FacetGrid(tips, col=&quot;time&quot;,  row=&quot;smoker&quot;, hue='sex')
+g = g.map(plt.scatter, &quot;total_bill&quot;, &quot;tip&quot;).add_legend()
+
+# general version of &quot;jointplot&quot;
+g = sns.JointGrid(x=&quot;total_bill&quot;, y=&quot;tip&quot;, data=tips)
+g = g.plot(sns.regplot, sns.distplot)
+</code></pre>
+
+<h2 id="pandas-built-in">Pandas (built-in)</h2>
+
+<pre><code class="language-python">plt.style.use('ggplot')
+plt.style.use('bmh')
+
+df['A'].hist()
+df['A'].plot.hist(bins=50) # parameters same as plt.hist()
+
+df['A'].plot.kde()
+
+# NOTICE: these methods are also be called by Series objects
+df.plot.density() # multiple lines with different colors
+
+# area chart
+df.plot.area(alpha=0.4) 
+
+df.plot.bar() # x is index, y is value, category is column
+df.plot.bar(stacked=True) 
+
+df.plot.box() # by=...
+
+# line chart
+df.plot.line(x=df.index,y='B',figsize=(12,3),lw=1)
+
+df.plot.scatter(x='A',y='B')
+df.plot.scatter(x='A',y='B',c='C',cmap='coolwarm') # map color, or do sth like c='red'
+df.plot.scatter(x='A',y='B',s=df1['C']*200) # map size
+
+# alternative to scatter plot
+df = pd.DataFrame(np.random.randn(1000, 2), columns=['a', 'b'])
+df.plot.hexbin(x='a',y='b',gridsize=25,cmap='Oranges')
+</code></pre>
+
+<h2 id="plotly">Plotly</h2>
+
+<p>Powerful interactive visualization tool. see <a href="https://plot.ly/">https://plot.ly/</a></p>
+
+<h2 id="images">Images</h2>
+
+<pre><code class="language-python">from PIL import Image
+Image.open(filename) # you should see it in a notebook
+</code></pre>
+
+<h2 id="jupyter-notebook-widgets-install-guide-https-ipywidgets-readthedocs-io-en-latest-user-install-html">Jupyter Notebook Widgets <a href="https://ipywidgets.readthedocs.io/en/latest/user_install.html">install guide</a></h2>
+
+<pre><code class="language-python">from __future__ import print_function
+from ipywidgets import interact, interactive, fixed, interact_manual
+import ipywidgets as widgets
+</code></pre>
+
+<pre><code class="language-python">def f(w,b,grid,title,color):
+    plt.clf()
+    x = np.arange(-1,1,0.01)
+    plt.plot(x, w*x+b, color)
+    plt.plot(x, np.zeros(x.shape), 'k')
+    plt.axis([-1,1,-3,3])
+    plt.grid(grid)
+    plt.title(title)
+# if you want to click a button and update, use `interact_manual`
+interact(f, w=(-1.,1.,.1), b=(-3,3,1), grid=False, title='Enter title',
+         color={'red':'r','blue':'b', 'green':'g'},continuous_update=False);
+</code></pre>
+
+<div align="center">
+<img src="/img/python/widget.png" width=500>
+</div>
+
+<p>For more types of widgets, click <a href="https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html">here</a>.</p>
+
+<h2 id="matplotlib-colortable">Matplotlib Colortable</h2>
+
+<p><img src="/img/python/colortable.jpg" alt="colortable" /></p>
+
+<h2 id="other-resources">Other Resources</h2>
+
+<ul>
+<li><a href="http://www.labri.fr/perso/nrougier/teaching/matplotlib/">tutorial</a></li>
+<li><a href="http://matplotlib.org/gallery.html">gallery</a></li>
+<li><a href="http://matplotlib.org/users/colormaps.html">Choosing colormaps</a> <code>​</code> <code>xxx(cmap=‘cmapname’)</code></li>
+</ul>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        
+          <li class="next">
+            <a href="https://hitvoice.github.io/post/nn/" data-toggle="tooltip" data-placement="top" title="Neural Network">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'rqyang';
+    var disqus_identifier = 'https:\/\/hitvoice.github.io\/post\/python\/';
+    var disqus_title = 'Pratical Cheatsheet for Python Data Analysis';
+    var disqus_url = 'https:\/\/hitvoice.github.io\/post\/python\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:runqiyang@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/https://github.com/hitvoice" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://hitvoice.github.io/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Runqi Yang
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://hitvoice.github.io">Runqi Yang&#39;s Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.21</a> powered
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://hitvoice.github.io/js/main.js"></script>
+<script src="https://hitvoice.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '012420793613416242870:adcziazi7hg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+
