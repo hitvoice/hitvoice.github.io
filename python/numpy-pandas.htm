@@ -1,0 +1,1031 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>1</title></head><body><article class="markdown-body"><blockquote>
+<p>Compiled by Runqi Yang (<a href="https://hitvoice.github.io">https://hitvoice.github.io</a>) <br>
+Any advice please leave a comment :)</p>
+</blockquote>
+<h2>
+<a id="user-content-numpy" class="anchor" href="#numpy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NumPy</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> numpy <span class="pl-k">as</span> np</pre></div>
+<blockquote>
+<p>Attention: When assigning a float value to an integer array, the value will be rounded without a warning!</p>
+</blockquote>
+<h3>
+<a id="user-content-creating-numpy-arrays" class="anchor" href="#creating-numpy-arrays" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating NumPy Arrays</h3>
+<p><strong>from python list</strong></p>
+<div class="highlight highlight-source-python"><pre>np.array([<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>]) <span class="pl-c"><span class="pl-c">#</span> 1-d</span>
+np.array([[<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>],[<span class="pl-c1">4</span>,<span class="pl-c1">5</span>,<span class="pl-c1">6</span>],[<span class="pl-c1">7</span>,<span class="pl-c1">8</span>,<span class="pl-c1">9</span>]]) <span class="pl-c"><span class="pl-c">#</span> 2-d</span>
+np.asarray(arr) <span class="pl-c"><span class="pl-c">#</span> convert python list to array, but pass np.array through without copy </span>
+arr.tolist() <span class="pl-c"><span class="pl-c">#</span> convert to (possibly nested) python list. Don't use `list(arr)`!</span></pre></div>
+<p><strong>from built-in method</strong></p>
+<div class="highlight highlight-source-python"><pre>np.arange(<span class="pl-c1">0</span>,<span class="pl-c1">10</span>) <span class="pl-c"><span class="pl-c">#</span> [0,10)</span>
+np.arange(<span class="pl-c1">0</span>,<span class="pl-c1">11</span>,<span class="pl-c1">2</span>) <span class="pl-c"><span class="pl-c">#</span> array([0,  2,  4,  6,  8, 10])</span>
+np.linspace(<span class="pl-c1">2.0</span>, <span class="pl-c1">3.0</span>, <span class="pl-v">num</span><span class="pl-k">=</span><span class="pl-c1">5</span>) <span class="pl-c"><span class="pl-c">#</span> [2., 2.25, 2.5, 2.75, 3.]</span>
+np.linspace(<span class="pl-c1">2.0</span>, <span class="pl-c1">3.0</span>, <span class="pl-v">num</span><span class="pl-k">=</span><span class="pl-c1">5</span>, <span class="pl-v">endpoint</span><span class="pl-k">=</span><span class="pl-c1">False</span>) <span class="pl-c"><span class="pl-c">#</span> [2., 2.2, 2.4, 2.6, 2.8]</span>
+np.zeros(<span class="pl-c1">3</span>) <span class="pl-c"><span class="pl-c">#</span> 3 x 1</span>
+np.empty_like(x) <span class="pl-c"><span class="pl-c">#</span> matrix with the same dimensions as 'x' with all 0s.</span>
+np.ones((<span class="pl-c1">3</span>,<span class="pl-c1">3</span>)) <span class="pl-c"><span class="pl-c">#</span> 3 x 3 noticed that a tuple should be used</span>
+np.full((<span class="pl-c1">2</span>,<span class="pl-c1">2</span>), <span class="pl-c1">7</span>) <span class="pl-c"><span class="pl-c">#</span> array([[7,7],[7,7]])</span>
+np.tile(x,(<span class="pl-c1">2</span>,<span class="pl-c1">1</span>)) <span class="pl-c"><span class="pl-c">#</span> stacking multiple copies</span>
+np.linspace(<span class="pl-c1">0</span>,<span class="pl-c1">10</span>,<span class="pl-c1">3</span>) <span class="pl-c"><span class="pl-c">#</span> array([  0.,   5.,  10.])</span>
+np.eye(<span class="pl-c1">4</span>) <span class="pl-c"><span class="pl-c">#</span> 4 x 4 identity matrix</span>
+np.random.rand(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>) <span class="pl-c"><span class="pl-c">#</span> uniform [0,1)</span>
+np.random.randn(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>) <span class="pl-c"><span class="pl-c">#</span> standard normal</span>
+np.random.randint(<span class="pl-c1">1</span>,<span class="pl-c1">100</span>) <span class="pl-c"><span class="pl-c">#</span> 1 random number in [1,100)</span>
+np.random.randint(<span class="pl-c1">1</span>,<span class="pl-c1">100</span>,(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>)) <span class="pl-c"><span class="pl-c">#</span> 2x2 random numbers in [1,100)</span>
+np.random.permutation(arr) <span class="pl-c"><span class="pl-c">#</span> not in-place</span>
+np.random.choice(arr, <span class="pl-c1">10</span>) <span class="pl-c"><span class="pl-c">#</span> random sampling</span>
+np.indices((<span class="pl-c1">3</span>,<span class="pl-c1">3</span>)) <span class="pl-c"><span class="pl-c">#</span> array([[[0, 0, 0], [1, 1, 1], [2, 2, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]]])</span></pre></div>
+<p><strong>from existing arrays</strong></p>
+<div class="highlight highlight-source-python"><pre>np.hstack([a,b,c]) <span class="pl-c"><span class="pl-c">#</span> left-middle-right. attention: a vector is by default a row vector</span>
+np.vstack([a,b,c]) <span class="pl-c"><span class="pl-c">#</span> up-middle-down</span>
+np.concatenate([a,b]) <span class="pl-c"><span class="pl-c">#</span> === np.vstack [(3,4),(3,4)]=&gt;(6,4)</span>
+np.concatenate([a,b],<span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> === np.hstack [(3,4),(3,4)]=&gt;(3,8)</span>
+np.stack([a,b]) <span class="pl-c"><span class="pl-c">#</span> [(3,4),(3,4)]=&gt;(2,3,4)</span>
+np.stack([a,b], <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> [(3,4),(3,4)]=&gt;(3,2,4)</span>
+np.stack([a,b], <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">2</span>) <span class="pl-c"><span class="pl-c">#</span> [(3,4),(3,4)]=&gt;(3,4,2)</span></pre></div>
+<h3>
+<a id="user-content-file-io" class="anchor" href="#file-io" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>file IO</h3>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">assert</span> filename.endswith(<span class="pl-s"><span class="pl-pds">'</span>.npz<span class="pl-pds">'</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> save to disk</span>
+np.savez(filename, <span class="pl-v">A</span><span class="pl-k">=</span>arr1, <span class="pl-v">B</span><span class="pl-k">=</span>arr2)
+np.savetxt(filename, arr, <span class="pl-v">fmt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span><span class="pl-c1">%d</span>,<span class="pl-c1">%.5f</span><span class="pl-pds">'</span></span>, <span class="pl-v">header</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>id,value<span class="pl-pds">'</span></span>, <span class="pl-v">comments</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>) 
+<span class="pl-c"><span class="pl-c">#</span> load from disk</span>
+loader <span class="pl-k">=</span> np.load(filename)
+arr1 <span class="pl-k">=</span> loader[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>]
+arr2 <span class="pl-k">=</span> loader[<span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>]
+<span class="pl-c"><span class="pl-c">#</span> efficient compressed IO</span>
+<span class="pl-k">import</span> bcolz
+<span class="pl-k">def</span> <span class="pl-en">save_array</span>(<span class="pl-smi">fname</span>, <span class="pl-smi">arr</span>):
+    c<span class="pl-k">=</span>bcolz.carray(arr, <span class="pl-v">rootdir</span><span class="pl-k">=</span>fname, <span class="pl-v">mode</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>w<span class="pl-pds">'</span></span>)
+    c.flush()
+
+<span class="pl-k">def</span> <span class="pl-en">load_array</span>(<span class="pl-smi">fname</span>):
+    <span class="pl-k">return</span> bcolz.open(fname)[:]</pre></div>
+<h3>
+<a id="user-content-editing" class="anchor" href="#editing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Editing</h3>
+<div class="highlight highlight-source-python"><pre>s <span class="pl-k">=</span> np.array([<span class="pl-c1">1</span>,<span class="pl-c1">3</span>,<span class="pl-c1">4</span>])
+s <span class="pl-k">=</span> np.insert(s, <span class="pl-c1">1</span>, <span class="pl-c1">2</span>) <span class="pl-c"><span class="pl-c">#</span> return [1,2,3,4]</span>
+s <span class="pl-k">=</span> np.append(s, <span class="pl-c1">5</span>) <span class="pl-c"><span class="pl-c">#</span> return [1,3,4,5]</span>
+
+s <span class="pl-k">=</span> np.array([[<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>,<span class="pl-c1">4</span>], [<span class="pl-c1">5</span>,<span class="pl-c1">6</span>,<span class="pl-c1">7</span>,<span class="pl-c1">8</span>], [<span class="pl-c1">9</span>,<span class="pl-c1">10</span>,<span class="pl-c1">11</span>,<span class="pl-c1">12</span>]])
+s <span class="pl-k">=</span> np.delete(s, <span class="pl-c1">1</span>, <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> [[1,2,3,4],[9,10,11,12]]</span></pre></div>
+<h3>
+<a id="user-content-indexing" class="anchor" href="#indexing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Indexing</h3>
+<p>Similar to MATLAB indexing. Index using a np.array with type bool. (using python native array won’t work)</p>
+<div class="highlight highlight-source-python"><pre>a <span class="pl-k">=</span> np.array([[<span class="pl-c1">1</span>,<span class="pl-c1">2</span>], [<span class="pl-c1">3</span>, <span class="pl-c1">4</span>], [<span class="pl-c1">5</span>, <span class="pl-c1">6</span>]])
+<span class="pl-c"><span class="pl-c">#</span> WARNING: be careful when using a[a&gt;2]=2 in functions, use `np.where` instead</span>
+a[a <span class="pl-k">&gt;</span> <span class="pl-c1">2</span>] <span class="pl-c"><span class="pl-c">#</span> [3 4 5 6]</span>
+a[(a<span class="pl-k">&lt;</span><span class="pl-c1">2</span>) <span class="pl-k">|</span> (a<span class="pl-k">&gt;</span><span class="pl-c1">6</span>)] <span class="pl-c"><span class="pl-c">#</span> use &amp; | , don't forget `()`</span>
+a[<span class="pl-k">~</span>np.isnan(a)]</pre></div>
+<h3>
+<a id="user-content-attributes-and-methods" class="anchor" href="#attributes-and-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Attributes and Methods</h3>
+<div class="highlight highlight-source-python"><pre>arr <span class="pl-k">=</span> np.arange(<span class="pl-c1">21</span>)
+<span class="pl-c"><span class="pl-c">#</span> methods</span>
+arr.reshape(<span class="pl-c1">3</span>,<span class="pl-c1">7</span>)<span class="pl-c"><span class="pl-c">#</span> == arr.reshape(3,-1) == arr.reshape(-1,7), vector is filled in each row</span>
+arr.flatten() <span class="pl-c"><span class="pl-c">#</span> [[1,2], [3,4]] =&gt; [1, 2, 3, 4]</span>
+arr.flatten(<span class="pl-s"><span class="pl-pds">'</span>F<span class="pl-pds">'</span></span>)  <span class="pl-c"><span class="pl-c">#</span> [[1,2], [3,4]] =&gt; [1, 3, 2, 4]</span>
+arr.max()
+arr.argmax()
+arr.min()
+arr.argmin()
+arr.quantile(<span class="pl-c1">.75</span>)
+arr.clip(<span class="pl-v">min</span><span class="pl-k">=</span><span class="pl-c1">0.05</span>,<span class="pl-v">max</span><span class="pl-k">=</span><span class="pl-c1">0.95</span>) <span class="pl-c"><span class="pl-c">#</span> clipping values to make them lie within [0.05, 0.95]</span>
+arr.astype(<span class="pl-c1">int</span>) <span class="pl-c"><span class="pl-c">#</span> convert element type, other types: np.float32 np.float64</span>
+arr.flatten() <span class="pl-c"><span class="pl-c">#</span> shape: (1000,1) -&gt; (1000,), usually following "reshape"</span>
+
+<span class="pl-c"><span class="pl-c">#</span> attributes</span>
+arr.shape
+arr.dtype <span class="pl-c"><span class="pl-c">#</span> don't write to this value, use "astype"</span>
+arr.size <span class="pl-c"><span class="pl-c">#</span> total number of elements === np.prod(arr.shape)</span></pre></div>
+<h3>
+<a id="user-content-operations" class="anchor" href="#operations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Operations</h3>
+<p><strong>arithmetic</strong></p>
+<p>+,-,*,/,** with array or scalar.</p>
+<p><strong>universal</strong></p>
+<div class="highlight highlight-source-python"><pre>np.sum(arr) <span class="pl-c"><span class="pl-c">#</span> sum up all elements，'axis=0' sum by column ⬆️⬇️, 'axis=1' sum by row ⬅️➡️</span>
+<span class="pl-c"><span class="pl-c">#</span> usually use with `reshape`: np.sum(arr, axis=0).reshape((-1,1))</span>
+np.sqrt(arr)
+np.exp(arr)
+np.log(arr)
+np.max(arr)
+np.sin(arr)
+np.dot(A,B) <span class="pl-c"><span class="pl-c">#</span> matrix dot product, or A.dot(B)</span>
+
+np.partition(arr, <span class="pl-c1">3</span>)[<span class="pl-c1">3</span>] <span class="pl-c"><span class="pl-c">#</span> 4th-min</span>
+np.percentile(arr, [<span class="pl-c1">25</span>,<span class="pl-c1">50</span>,<span class="pl-c1">75</span>], <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> with interpolation</span>
+
+np.count_nonzero(arr)
+np.isnan(arr)
+np.unique(arr)
+
+np.array_equal(arr1, arr2) <span class="pl-c"><span class="pl-c">#</span> True if two arrays have the same shape and elements</span>
+np.allclose(arr1, arr2) <span class="pl-c"><span class="pl-c">#</span> True if 2 arrays are nearly the same (due to numerical issues)</span>
+
+np.argwhere(arr <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> position of target elements. e.g. [[-1, 1],[1,-1]] =&gt; [[0,0], [1,1]]</span>
+np.where(arr<span class="pl-k">&gt;</span><span class="pl-c1">10</span>, <span class="pl-c1">10</span>, arr) <span class="pl-c"><span class="pl-c">#</span> a two-way mapping</span>
+np.where(arr, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> binarize data</span>
+np.where(arr<span class="pl-k">&gt;</span><span class="pl-c1">10</span>) <span class="pl-c"><span class="pl-c">#</span> equvilant to np.argwhere(arr&gt;10).T</span>
+np.apply_along_axis(func1d, axis, arr) <span class="pl-c"><span class="pl-c">#</span> apply function taking 1d-arr as input along axis</span>
+np.vectorize(ufunc)(arr) <span class="pl-c"><span class="pl-c">#</span> apply element-wise function (transformation) to array</span>
+
+np.einsum(<span class="pl-s"><span class="pl-pds">'</span>xyz-&gt;zxy<span class="pl-pds">'</span></span>, arr) <span class="pl-c"><span class="pl-c">#</span> swap axis (higher dimension transpose)</span>
+np.expand_dims(arr, <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> shape: (3,4)-&gt;(1,3,4)</span>
+np.squeeze(arr) <span class="pl-c"><span class="pl-c">#</span> or arr.squeeze(), shape: (1,3,4)-&gt;(3,4)</span>
+np.flip(arr, <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">0</span>) <span class="pl-c"><span class="pl-c">#</span> inverse the array</span>
+np.argsort(arr)</pre></div>
+<p><strong>matrix</strong></p>
+<div class="highlight highlight-source-python"><pre>A.dot(B)
+A.T <span class="pl-c"><span class="pl-c">#</span> transpose, taking transpose of a vector does nothing.</span></pre></div>
+<p><strong>broadcasting</strong></p>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"><span class="pl-c">#</span> example: normalize each row </span>
+<span class="pl-c"><span class="pl-c">#</span> (notice: in sparse matrix this should be done by diag construction)</span>
+x <span class="pl-k">=</span> np.array([[<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">7</span>], [<span class="pl-c1">30</span>, <span class="pl-c1">20</span>, <span class="pl-c1">50</span>], [<span class="pl-c1">.04</span>, <span class="pl-c1">.03</span>, <span class="pl-c1">.03</span>]])
+s <span class="pl-k">=</span> np.sum(x, <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>).reshape((<span class="pl-k">-</span><span class="pl-c1">1</span>,<span class="pl-c1">1</span>))
+x <span class="pl-k">=</span> x<span class="pl-k">/</span>s</pre></div>
+<h2>
+<a id="user-content-pandas" class="anchor" href="#pandas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pandas</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> pandas <span class="pl-k">as</span> pd
+<span class="pl-k">from</span> numpy.random <span class="pl-k">import</span> randn
+df <span class="pl-k">=</span> pd.DataFrame(randn(<span class="pl-c1">5</span>,<span class="pl-c1">4</span>),<span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>A B C D E<span class="pl-pds">'</span></span>.split(),<span class="pl-v">columns</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>W X Y Z<span class="pl-pds">'</span></span>.split())</pre></div>
+<blockquote>
+<p>Attention: when shuffling a DataFrame or doing any cross-row transformation, remember to use <code>​df.reset_index(inplace=True)</code> to erase all the original ids.</p>
+</blockquote>
+<h3>
+<a id="user-content-io" class="anchor" href="#io" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IO</h3>
+<div class="highlight highlight-source-python"><pre>df.index.name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>idx<span class="pl-pds">'</span></span>
+df.to_csv(<span class="pl-s"><span class="pl-pds">'</span>example.csv<span class="pl-pds">'</span></span>, <span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-c1">False</span>) <span class="pl-c"><span class="pl-c">#</span> header=False</span>
+df <span class="pl-k">=</span> pd.read_csv(<span class="pl-s"><span class="pl-pds">'</span>example.csv<span class="pl-pds">'</span></span>)
+df <span class="pl-k">=</span> pd.read_csv(<span class="pl-s"><span class="pl-pds">'</span>example.csv<span class="pl-pds">'</span></span>, <span class="pl-v">header</span><span class="pl-k">=</span><span class="pl-c1">None</span>); df.columns <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>col1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>col2<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>col3<span class="pl-pds">'</span></span>]
+df <span class="pl-k">=</span> pd.read_csv(<span class="pl-v">parse_dates</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>date_col<span class="pl-pds">'</span></span>], <span class="pl-v">infer_datetime_format</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
+<span class="pl-c"><span class="pl-c">#</span> datetime columns can be sliced as:</span>
+df[(df[<span class="pl-s"><span class="pl-pds">'</span>date<span class="pl-pds">'</span></span>] <span class="pl-k">&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>2016-6-1<span class="pl-pds">'</span></span>) <span class="pl-k">&amp;</span> (df[<span class="pl-s"><span class="pl-pds">'</span>date<span class="pl-pds">'</span></span>] <span class="pl-k">&lt;=</span> <span class="pl-s"><span class="pl-pds">'</span>2016-6-10<span class="pl-pds">'</span></span>)]
+
+df.set_index(<span class="pl-s"><span class="pl-pds">'</span>idx<span class="pl-pds">'</span></span>, <span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
+df.reset_index(<span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
+
+df.to_excel(<span class="pl-s"><span class="pl-pds">'</span>excel.xlsx<span class="pl-pds">'</span></span>,<span class="pl-v">sheet_name</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Sheet1<span class="pl-pds">'</span></span>,<span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-c1">False</span>)
+pd.read_excel(<span class="pl-s"><span class="pl-pds">'</span>excel.xlsx<span class="pl-pds">'</span></span>,<span class="pl-v">sheetname</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Sheet1<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> no '_'</span>
+
+<span class="pl-c"><span class="pl-c">#</span> print entire dataframe or series</span>
+<span class="pl-c1">print</span>(df.to_string())
+
+<span class="pl-c"><span class="pl-c">#</span> convert to numpy array</span>
+df.as_matrix()
+<span class="pl-c"><span class="pl-c">#</span> columns not in df will not appear (unlike `.loc` which will result in new NaN columns)</span>
+df.as_matrix(<span class="pl-v">columns</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>]) 
+</pre></div>
+<p>Database IO：<a href="http://www.sqlalchemy.org">SQLAlchemy</a>，<a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_sql.html#pandas.read_sql">pandas.read_sql</a></p>
+<p>Reading JSON files：<a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/generated/pandas.read_json.html">pd.read_json</a></p>
+<h3>
+<a id="user-content-series" class="anchor" href="#series" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Series</h3>
+<div class="highlight highlight-source-python"><pre>s <span class="pl-k">=</span> pd.Series([<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>,<span class="pl-c1">4</span>],<span class="pl-v">index</span> <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>USA<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Germany<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>USSR<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Japan<span class="pl-pds">'</span></span>]) <span class="pl-c"><span class="pl-c">#</span> or initialize with dict</span>
+s[<span class="pl-s"><span class="pl-pds">'</span>USA<span class="pl-pds">'</span></span>]
+s.to_frame(<span class="pl-v">name</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>ColName<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> convert to one-column DataFrame</span>
+<span class="pl-c"><span class="pl-c">#</span> when applying the following functions to DataFrames, they apply on each column.</span>
+<span class="pl-c"><span class="pl-c">#</span> they can also be applied to groupby objects. # df.groupby('colX').sum(), colX become index</span>
+s.mean()
+s.std()
+s.min()
+s.max()
+s.abs()
+s.count()
+s.cumsum()
+s.describe()
+s.isnull().sum()
+s.notnull().sum()
+s.unique()
+s.nunique() <span class="pl-c"><span class="pl-c">#</span> number of unique values</span>
+s.duplicated(<span class="pl-v">keep</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>first<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> or 'last', return duplicated items</span>
+s.value_counts() <span class="pl-c"><span class="pl-c">#</span> sorted in descending order: s.value_counts().head(10)</span>
+s.value_counts(<span class="pl-v">sort</span><span class="pl-k">=</span><span class="pl-c1">False</span>).sort_index() <span class="pl-c"><span class="pl-c">#</span> sorted by index instead of counts</span>
+s.value_counts(<span class="pl-v">normalize</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
+s.map({<span class="pl-s"><span class="pl-pds">'</span>female<span class="pl-pds">'</span></span>:<span class="pl-c1">0</span>, <span class="pl-s"><span class="pl-pds">'</span>male<span class="pl-pds">'</span></span>:<span class="pl-c1">1</span>}) <span class="pl-c"><span class="pl-c">#</span> not in-place, can be used in feature extraction</span>
+s.map(<span class="pl-c1">len</span>)
+tqdm.pandas();s.progress_map(func) <span class="pl-c"><span class="pl-c">#</span> can see a progress bar</span>
+s.astype(<span class="pl-c1">str</span>)
+<span class="pl-c"><span class="pl-c">#</span> set operations</span>
+np.intersect1d(s1.values, s2.values)
+np.union1d(s1.values, s2.values)
+np.setdiff1d(s1.values, s2.values)
+np.setxor1d(s1.values, s2.values) <span class="pl-c"><span class="pl-c">#</span> sorted, unique values that are in only one input array.</span></pre></div>
+<h3>
+<a id="user-content-dataframes" class="anchor" href="#dataframes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DataFrames</h3>
+<p>Be careful with chained indexing (see <a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy">this</a>). If the warning is false positive and you're sure about it, use <code>pd.options.mode.chained_assignment = None</code>​.</p>
+<div class="highlight highlight-source-python"><pre>df <span class="pl-k">=</span> pd.DataFrame(np.random.randn(<span class="pl-c1">5</span>,<span class="pl-c1">4</span>),<span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>A B C D E<span class="pl-pds">'</span></span>.split(),<span class="pl-v">columns</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>W X Y Z<span class="pl-pds">'</span></span>.split())
+<span class="pl-c"><span class="pl-c">#</span> selecting</span>
+df[[<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>Z<span class="pl-pds">'</span></span>]] <span class="pl-c"><span class="pl-c">#</span> select columns</span>
+df.loc[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>] <span class="pl-c"><span class="pl-c">#</span> select rows by name of index, return row as Series object</span>
+df.iloc[<span class="pl-c1">2</span>] <span class="pl-c"><span class="pl-c">#</span> select rows by indexing numbers</span>
+df.loc[[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>], [<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>]] <span class="pl-c"><span class="pl-c">#</span> select rows and columns (A, W) &amp; (B, Y)</span>
+df <span class="pl-k">=</span> df.loc[:, [<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>]] <span class="pl-c"><span class="pl-c">#</span> reorder columns</span>
+<span class="pl-c"><span class="pl-c">#</span> `.ix` can be `loc` or `iloc`. do not use it for indexing to avoid unexpected results.</span>
+
+df[df[<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>]<span class="pl-k">&gt;</span><span class="pl-c1">0</span>] <span class="pl-c"><span class="pl-c">#</span> results in rows ABDE</span>
+df[(df[<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>]<span class="pl-k">&gt;</span><span class="pl-c1">0</span>) <span class="pl-k">&amp;</span> (df[<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>] <span class="pl-k">&gt;</span> <span class="pl-c1">1</span>)] <span class="pl-c"><span class="pl-c">#</span> &amp; |</span>
+df[df.index <span class="pl-k">&lt;</span> <span class="pl-c1">100</span>]
+df.sample(<span class="pl-c1">10</span>, <span class="pl-v">random_state</span><span class="pl-k">=</span><span class="pl-c1">101</span>)
+
+<span class="pl-c"><span class="pl-c">#</span> editing</span>
+df[<span class="pl-s"><span class="pl-pds">'</span>new<span class="pl-pds">'</span></span>] <span class="pl-k">=</span> df[<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>] <span class="pl-k">+</span> df[<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>] <span class="pl-c"><span class="pl-c">#</span> create a new column</span>
+df.drop(<span class="pl-s"><span class="pl-pds">'</span>new<span class="pl-pds">'</span></span>,<span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> remove a column, not in-place</span>
+df.drop(<span class="pl-s"><span class="pl-pds">'</span>new<span class="pl-pds">'</span></span>,<span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>,<span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> the same as `del df['new']`</span>
+df.drop(<span class="pl-s"><span class="pl-pds">'</span>E<span class="pl-pds">'</span></span>,<span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">0</span>)
+df <span class="pl-k">=</span> df.drop(df[df[<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>]<span class="pl-k">&lt;</span><span class="pl-c1">0</span>].index) <span class="pl-c"><span class="pl-c">#</span> equiv to `df = df[df['W']&gt;=0]`</span>
+
+df.reset_index() <span class="pl-c"><span class="pl-c">#</span> reset to default 0,1...n index</span>
+df[<span class="pl-s"><span class="pl-pds">'</span>States<span class="pl-pds">'</span></span>] <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>CA NY WY OR CO<span class="pl-pds">'</span></span>.split()
+df.set_index(<span class="pl-s"><span class="pl-pds">'</span>States<span class="pl-pds">'</span></span>,<span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
+df.reindex(np.random.permutation(df.index)) <span class="pl-c"><span class="pl-c">#</span> shuffle the DataFrame rows (not in-place)</span>
+df[<span class="pl-k">~</span>df.index.duplicated(<span class="pl-v">keep</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>first<span class="pl-pds">'</span></span>)] <span class="pl-c"><span class="pl-c">#</span> remove duplicated indices</span>
+df[df.duplicated(<span class="pl-s"><span class="pl-pds">'</span>some_column<span class="pl-pds">'</span></span>,<span class="pl-v">keep</span><span class="pl-k">=</span><span class="pl-c1">False</span>)].sort_values(<span class="pl-v">by</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>some_column<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span>see duplicated rows</span>
+df.transpose()
+
+df.rename(<span class="pl-v">columns</span><span class="pl-k">=</span>{<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>:<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>W<span class="pl-pds">'</span></span>:<span class="pl-s"><span class="pl-pds">'</span>w<span class="pl-pds">'</span></span>}, <span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> rename columns</span>
+df.rename(<span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-k">lambda</span> <span class="pl-smi">x</span>:x<span class="pl-k">+</span><span class="pl-c1">1</span>, <span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> rename indices</span>
+
+<span class="pl-c"><span class="pl-c">#</span> iterate</span>
+<span class="pl-k">for</span> index, row <span class="pl-k">in</span> df.iterrows():
+  <span class="pl-c1">print</span>(row[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>], row[<span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>])</pre></div>
+<h3>
+<a id="user-content-operations-1" class="anchor" href="#operations-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>operations</h3>
+<div class="highlight highlight-source-python"><pre>df.head(<span class="pl-c1">5</span>)
+df.info()
+df.columns
+df.index
+df.sort_values(<span class="pl-v">by</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>, <span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>, <span class="pl-v">ascending</span><span class="pl-k">=</span><span class="pl-c1">False</span>) 
+df[[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>]].corr() <span class="pl-c"><span class="pl-c">#</span> correlation matrix</span>
+df.apply(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>: x.max() <span class="pl-k">-</span> x.min()) <span class="pl-c"><span class="pl-c">#</span> reduce to a Series</span>
+df.apply(np.abs) <span class="pl-c"><span class="pl-c">#</span> apply element-wise. Use 'applymap' to force element-wise operation</span>
+df.apply(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>: x[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>]<span class="pl-k">-</span>x[<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>], <span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> row-wise, passes a Series object, returns a Series</span>
+tqdm.pandas();df.progress_apply(func) <span class="pl-c"><span class="pl-c">#</span> can see a progress bar</span>
+df.where(df<span class="pl-k">&gt;</span><span class="pl-c1">0</span>, arr) <span class="pl-c"><span class="pl-c">#</span> if condition is not satified(&lt;0), replace by elements in array arr.</span></pre></div>
+<h3>
+<a id="user-content-special-creation" class="anchor" href="#special-creation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>special creation</h3>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"><span class="pl-c">#</span> cross table</span>
+pd.crosstab(df[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>], df[<span class="pl-s"><span class="pl-pds">'</span>Y<span class="pl-pds">'</span></span>], <span class="pl-v">margins</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> count row totals and column totals</span>
+
+<span class="pl-c"><span class="pl-c">#</span> one-hot (dummy) variable</span>
+pd.get_dummies(train[<span class="pl-s"><span class="pl-pds">'</span>Sex<span class="pl-pds">'</span></span>], <span class="pl-v">drop_first</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> `drop_first` use n-1 bits to encode n classes</span>
+pd.get_dummies(train[<span class="pl-s"><span class="pl-pds">'</span>Sex<span class="pl-pds">'</span></span>], <span class="pl-v">prefix</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Sex<span class="pl-pds">'</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> pivot table</span>
+data <span class="pl-k">=</span> {<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>:[<span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span>],
+     <span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>:[<span class="pl-s"><span class="pl-pds">'</span>one<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>one<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>two<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>two<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>one<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>one<span class="pl-pds">'</span></span>],
+       <span class="pl-s"><span class="pl-pds">'</span>C<span class="pl-pds">'</span></span>:[<span class="pl-s"><span class="pl-pds">'</span>x<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>y<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>x<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>y<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>x<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>y<span class="pl-pds">'</span></span>],
+       <span class="pl-s"><span class="pl-pds">'</span>D<span class="pl-pds">'</span></span>:[<span class="pl-c1">1</span>,<span class="pl-c1">3</span>,<span class="pl-c1">2</span>,<span class="pl-c1">5</span>,<span class="pl-c1">4</span>,<span class="pl-c1">1</span>]}
+df <span class="pl-k">=</span> pd.DataFrame(data)
+<span class="pl-c"><span class="pl-c">#</span> NaN will appear in the pivot table where there're no value</span>
+df.pivot_table(<span class="pl-v">values</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>D<span class="pl-pds">'</span></span>],<span class="pl-v">index</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>],<span class="pl-v">columns</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>C<span class="pl-pds">'</span></span>]) 
+<span class="pl-c"><span class="pl-c">#</span> the average will be taken when multiple values are mapped to one cell</span>
+df.pivot_table(<span class="pl-v">values</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>D<span class="pl-pds">'</span></span>],<span class="pl-v">index</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>],<span class="pl-v">columns</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>C<span class="pl-pds">'</span></span>]) 
+
+groupby <span class="pl-k">=</span> df.groupby(<span class="pl-s"><span class="pl-pds">'</span>key<span class="pl-pds">'</span></span>)
+<span class="pl-k">for</span> key, g_df <span class="pl-k">in</span> groupby:
+  <span class="pl-k">pass</span>
+g_df <span class="pl-k">=</span> groupby.get_group(<span class="pl-s"><span class="pl-pds">'</span>key<span class="pl-pds">'</span></span>)</pre></div>
+<h3>
+<a id="user-content-handle-missing-data" class="anchor" href="#handle-missing-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>handle missing data</h3>
+<div class="highlight highlight-source-python"><pre>df.dropna() <span class="pl-c"><span class="pl-c">#</span> remove rows containing missing data</span>
+df.dropna(<span class="pl-v">subset</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Z<span class="pl-pds">'</span></span>]) <span class="pl-c"><span class="pl-c">#</span> consider only these columns</span>
+df.dropna(<span class="pl-v">axis</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> drop columns</span>
+df.dropna(<span class="pl-v">thresh</span><span class="pl-k">=</span><span class="pl-c1">2</span>, <span class="pl-v">inplace</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> keep rows with at least 2 non-NA values</span>
+df[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>].fillna(<span class="pl-v">value</span><span class="pl-k">=</span>df[<span class="pl-s"><span class="pl-pds">'</span>X<span class="pl-pds">'</span></span>].mean())</pre></div>
+<h3>
+<a id="user-content-multiple-frames" class="anchor" href="#multiple-frames" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>multiple frames</h3>
+<div class="highlight highlight-source-python"><pre>pd.concat([df1,df2,df3])
+
+<span class="pl-c"><span class="pl-c">#</span> default inner, no NaNs. If there's multiple keys, values equal on each key will be kept.</span>
+pd.merge(left, right, <span class="pl-v">on</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>key1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>key2<span class="pl-pds">'</span></span>]) 
+<span class="pl-c"><span class="pl-c">#</span> the result contains all keys, NaNs may appear in both sides</span>
+pd.merge(left, right, <span class="pl-v">how</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>outer<span class="pl-pds">'</span></span>, <span class="pl-v">on</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>key1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>key2<span class="pl-pds">'</span></span>]) 
+<span class="pl-c"><span class="pl-c">#</span> the result contains keys in the left, NaNs may appear in right side.</span>
+pd.merge(left, right, <span class="pl-v">how</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>left<span class="pl-pds">'</span></span>, <span class="pl-v">on</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>key1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>key2<span class="pl-pds">'</span></span>])
+<span class="pl-c"><span class="pl-c">#</span> the result contains keys in the right, NaNs may appear in left side.</span>
+pd.merge(left, right, <span class="pl-v">how</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>right<span class="pl-pds">'</span></span>, <span class="pl-v">on</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>key1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>key2<span class="pl-pds">'</span></span>])
+<span class="pl-c"><span class="pl-c">#</span> if the columns are named differently. Not Recommended. Do rename first.</span>
+pd.merge(left, right, <span class="pl-v">left_on</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>key1<span class="pl-pds">'</span></span>, <span class="pl-v">right_on</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>key2<span class="pl-pds">'</span></span>)
+
+left.join(right) <span class="pl-c"><span class="pl-c">#</span> base on index, default 'left'</span>
+left.join(right, <span class="pl-v">how</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>outer<span class="pl-pds">'</span></span>)</pre></div>
+</article></body></html>

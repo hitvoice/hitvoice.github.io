@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hitvoice.github.io/post/nn/</loc>
+    <loc>https://hitvoice.github.io/post/nn-advance/</loc>
+    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/post/nn-basic/</loc>
     <lastmod>2017-04-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,7 +18,27 @@
   </url>
   
   <url>
+    <loc>https://hitvoice.github.io/post/dmnotes/</loc>
+    <lastmod>2016-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/</loc>
+    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hitvoice.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/page/</loc>
     <priority>0</priority>
   </url>
   
@@ -26,12 +51,6 @@
   <url>
     <loc>https://hitvoice.github.io/tags/programming/</loc>
     <lastmod>2016-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hitvoice.github.io/</loc>
-    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

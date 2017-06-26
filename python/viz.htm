@@ -1,0 +1,982 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>2</title></head><body><article class="markdown-body"><blockquote>
+<p>Compiled by Runqi Yang (<a href="https://hitvoice.github.io">https://hitvoice.github.io</a>) <br>
+Any advice please leave a comment :)</p>
+</blockquote>
+<h2>
+<a id="user-content-matplotlib" class="anchor" href="#matplotlib" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>matplotlib</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> matplotlib.pyplot <span class="pl-k">as</span> plt</pre></div>
+<p><code>%matplotlib inline</code> if you're in ipython notebook, otherwise use <code>plt.show()</code> at the end.</p>
+<p>use <code>plt.savefig('filename.png')</code> to save your figure to disk.</p>
+<h3>
+<a id="user-content-single-chart" class="anchor" href="#single-chart" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>single chart</h3>
+<div class="highlight highlight-source-python"><pre>plt.plot(x, y, <span class="pl-s"><span class="pl-pds">'</span>r<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> 'r' is the color red</span>
+plt.xlabel(<span class="pl-s"><span class="pl-pds">'</span>X Axis Title Here<span class="pl-pds">'</span></span>)
+plt.ylabel(<span class="pl-s"><span class="pl-pds">'</span>Y Axis Title Here<span class="pl-pds">'</span></span>)
+plt.title(<span class="pl-s"><span class="pl-pds">'</span>String Title Here<span class="pl-pds">'</span></span>)</pre></div>
+<h3>
+<a id="user-content-multiple-charts" class="anchor" href="#multiple-charts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>multiple charts</h3>
+<div class="highlight highlight-source-python"><pre>plt.subplot(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1</span>)
+plt.plot(x, y, <span class="pl-s"><span class="pl-pds">'</span>r--<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> More on color options later</span>
+plt.subplot(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">2</span>)
+plt.plot(y, x, <span class="pl-s"><span class="pl-pds">'</span>g*-<span class="pl-pds">'</span></span>)<span class="pl-bu">;</span></pre></div>
+<h3>
+<a id="user-content-get-objects" class="anchor" href="#get-objects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get objects</h3>
+<p>(auto)</p>
+<div class="highlight highlight-source-python"><pre>fig, axes <span class="pl-k">=</span> plt.subplots(<span class="pl-v">nrows</span><span class="pl-k">=</span><span class="pl-c1">1</span>, <span class="pl-v">ncols</span><span class="pl-k">=</span><span class="pl-c1">2</span>, <span class="pl-v">figsize</span><span class="pl-k">=</span>(<span class="pl-c1">8</span>,<span class="pl-c1">4</span>)) <span class="pl-c"><span class="pl-c">#</span> figsize can be omitted</span></pre></div>
+<p>(manual)</p>
+<div class="highlight highlight-source-python"><pre>fig <span class="pl-k">=</span> plt.figure(<span class="pl-v">figsize</span><span class="pl-k">=</span>(<span class="pl-c1">8</span>,<span class="pl-c1">4</span>)) <span class="pl-c"><span class="pl-c">#</span> figsize can be omitted</span>
+axes1 <span class="pl-k">=</span> fig.add_axes([<span class="pl-c1">0.1</span>, <span class="pl-c1">0.1</span>, <span class="pl-c1">0.8</span>, <span class="pl-c1">0.8</span>]) <span class="pl-c"><span class="pl-c">#</span> main axes</span>
+axes2 <span class="pl-k">=</span> fig.add_axes([<span class="pl-c1">0.2</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.4</span>, <span class="pl-c1">0.3</span>]) <span class="pl-c"><span class="pl-c">#</span> inset axes</span></pre></div>
+<p>(get current)</p>
+<div class="highlight highlight-source-python"><pre>fig <span class="pl-k">=</span> plt.gcf()
+ax <span class="pl-k">=</span> plt.gca()
+<span class="pl-c"><span class="pl-c">#</span> or</span>
+fig, ax <span class="pl-k">=</span> plt.subplots()</pre></div>
+<h3>
+<a id="user-content-methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>methods</h3>
+<div class="highlight highlight-source-python"><pre>ax.plot(x, y, <span class="pl-s"><span class="pl-pds">'</span>b.-<span class="pl-pds">'</span></span>, <span class="pl-v">label</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>)
+ax.plot([<span class="pl-k">-</span><span class="pl-c1">1</span>,<span class="pl-c1">10</span>],[<span class="pl-c1">0.95</span>,<span class="pl-c1">0.95</span>],<span class="pl-s"><span class="pl-pds">'</span>r-<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> draw a horizontal line</span>
+<span class="pl-c"><span class="pl-c">#</span>                        line width, style, transparency</span>
+ax.plot(x2, y2, <span class="pl-v">color</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>blue<span class="pl-pds">'</span></span>, <span class="pl-v">lw</span><span class="pl-k">=</span><span class="pl-c1">3</span>, <span class="pl-v">ls</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>--<span class="pl-pds">'</span></span>, <span class="pl-v">alpha</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>, <span class="pl-v">label</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>) 
+ax.legend([<span class="pl-s"><span class="pl-pds">'</span>name1<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>name2<span class="pl-pds">'</span></span>], <span class="pl-v">loc</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> or `loc='upper right'`</span>
+ax.set_xlabel(<span class="pl-s"><span class="pl-pds">'</span>xlabel<span class="pl-pds">'</span></span>)
+ax.set_ylabel(<span class="pl-s"><span class="pl-pds">'</span>ylabel<span class="pl-pds">'</span></span>)
+ax.set_title(<span class="pl-s"><span class="pl-pds">'</span>title<span class="pl-pds">'</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> legend code:</span>
+<span class="pl-c"><span class="pl-c">#</span> best -- 0</span>
+<span class="pl-c"><span class="pl-c">#</span> upper right -- 1</span>
+<span class="pl-c"><span class="pl-c">#</span> upper left -- 2</span>
+<span class="pl-c"><span class="pl-c">#</span> lower left -- 3</span>
+<span class="pl-c"><span class="pl-c">#</span> lower right -- 4</span>
+<span class="pl-c"><span class="pl-c">#</span> right -- 5</span>
+<span class="pl-c"><span class="pl-c">#</span> center left -- 6</span>
+<span class="pl-c"><span class="pl-c">#</span> center right -- 7</span>
+<span class="pl-c"><span class="pl-c">#</span> lower center -- 8</span>
+<span class="pl-c"><span class="pl-c">#</span> upper center -- 9</span>
+<span class="pl-c"><span class="pl-c">#</span> center -- 10</span>
+
+ax.axis(<span class="pl-s"><span class="pl-pds">'</span>tight<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> auto</span>
+ax.set_xlim([<span class="pl-c1">2</span>, <span class="pl-c1">5</span>]) <span class="pl-c"><span class="pl-c">#</span> manual</span>
+ax.set_ylim([<span class="pl-c1">0</span>, <span class="pl-c1">60</span>])
+ax.set_yscale(<span class="pl-s"><span class="pl-pds">'</span>log<span class="pl-pds">'</span></span>)
+
+<span class="pl-c"><span class="pl-c">#</span> use LaTeX formatted labels</span>
+<span class="pl-c"><span class="pl-c">#</span> see more in http://matplotlib.org/api/ticker_api.html</span>
+ax.set_xticks([<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>])
+ax.set_xticklabels([<span class="pl-sr"><span class="pl-k">r</span><span class="pl-pds">'</span><span class="pl-c1">$</span><span class="pl-cce">\a</span>lpha<span class="pl-c1">$</span><span class="pl-pds">'</span></span>, <span class="pl-sr"><span class="pl-k">r</span><span class="pl-pds">'</span><span class="pl-c1">$</span><span class="pl-c1">\b</span>eta<span class="pl-c1">$</span><span class="pl-pds">'</span></span>, <span class="pl-sr"><span class="pl-k">r</span><span class="pl-pds">'</span><span class="pl-c1">$</span><span class="pl-cce">\g</span>amma<span class="pl-c1">$</span><span class="pl-pds">'</span></span>, <span class="pl-sr"><span class="pl-k">r</span><span class="pl-pds">'</span><span class="pl-c1">$</span><span class="pl-c1">\d</span>elta<span class="pl-c1">$</span><span class="pl-pds">'</span></span>, <span class="pl-sr"><span class="pl-k">r</span><span class="pl-pds">'</span><span class="pl-c1">$</span><span class="pl-cce">\e</span>psilon<span class="pl-c1">$</span><span class="pl-pds">'</span></span>], <span class="pl-v">fontsize</span><span class="pl-k">=</span><span class="pl-c1">18</span>)
+yticks <span class="pl-k">=</span> [<span class="pl-c1">0</span>, <span class="pl-c1">50</span>, <span class="pl-c1">100</span>, <span class="pl-c1">150</span>]
+ax.set_yticks(yticks)
+ax.set_yticklabels([<span class="pl-s"><span class="pl-pds">"</span>$<span class="pl-c1">%.1f</span>$<span class="pl-pds">"</span></span> <span class="pl-k">%</span> y <span class="pl-k">for</span> y <span class="pl-k">in</span> yticks], <span class="pl-v">fontsize</span><span class="pl-k">=</span><span class="pl-c1">18</span>); 
+
+ax.grid(<span class="pl-c1">True</span>)
+ax.grid(<span class="pl-v">color</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>, <span class="pl-v">alpha</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>, <span class="pl-v">linestyle</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>dashed<span class="pl-pds">'</span></span>, <span class="pl-v">linewidth</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>)
+ax.text(<span class="pl-c1">0.15</span>, <span class="pl-c1">0.2</span>, <span class="pl-sr"><span class="pl-k">r</span><span class="pl-pds">"</span><span class="pl-c1">$</span>y=x<span class="pl-c1">^</span>2<span class="pl-c1">$</span><span class="pl-pds">"</span></span>, <span class="pl-v">fontsize</span><span class="pl-k">=</span><span class="pl-c1">20</span>, <span class="pl-v">color</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>) <span class="pl-c"><span class="pl-c">#</span> text annotation</span></pre></div>
+<div class="highlight highlight-source-python"><pre>fig.savefig(<span class="pl-s"><span class="pl-pds">"</span>filename.png<span class="pl-pds">"</span></span>, <span class="pl-v">dpi</span><span class="pl-k">=</span><span class="pl-c1">200</span>)</pre></div>
+<h3>
+<a id="user-content-histagram" class="anchor" href="#histagram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>histagram</h3>
+<p><a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">documentation</a></p>
+<div class="highlight highlight-source-python"><pre>counts, boundries, _ <span class="pl-k">=</span> plt.hist(arr) <span class="pl-c"><span class="pl-c">#</span> auto mode</span>
+plt.hist(arr, <span class="pl-v">bins</span><span class="pl-k">=</span><span class="pl-c1">50</span>)
+plt.hist(arr, <span class="pl-v">bins</span><span class="pl-k">=</span>np.arange(arr.min, arr.max()<span class="pl-k">+</span><span class="pl-c1">2</span>, <span class="pl-c1">5</span>)) <span class="pl-c"><span class="pl-c">#</span> set boundry [l,r)</span>
+plt.hist(arr, <span class="pl-v">log</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> log scale on y</span>
+plt.hist(arr, <span class="pl-v">range</span><span class="pl-k">=</span>(min_val, max_val)) <span class="pl-c"><span class="pl-c">#</span> ignore values outside the range</span>
+<span class="pl-c"><span class="pl-c">#</span> If data is out of bounds it will be added to the nearest bin, be careful!</span>
+<span class="pl-c"><span class="pl-c">#</span> Available auto bin size estimators: https://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram.html</span>
+
+<span class="pl-c"><span class="pl-c">#</span> if the data is discrete, use the following in Pandas:</span>
+column.value_counts().plot.bar()</pre></div>
+<h2>
+<a id="user-content-seaborn" class="anchor" href="#seaborn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>seaborn</h2>
+<p><a href="http://seaborn.pydata.org">homepage</a></p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> seaborn <span class="pl-k">as</span> sns
+<span class="pl-k">%</span>matplotlib inline
+
+tips <span class="pl-k">=</span> sns.load_dataset(<span class="pl-s"><span class="pl-pds">'</span>tips<span class="pl-pds">'</span></span>)
+flights <span class="pl-k">=</span> sns.load_dataset(<span class="pl-s"><span class="pl-pds">'</span>flights<span class="pl-pds">'</span></span>)
+iris <span class="pl-k">=</span> sns.load_dataset(<span class="pl-s"><span class="pl-pds">'</span>iris<span class="pl-pds">'</span></span>)</pre></div>
+<h3>
+<a id="user-content-distribution-plots" class="anchor" href="#distribution-plots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>distribution plots</h3>
+<div align="center">
+<a href="../img/python/seaborn1.png" target="_blank"><img src="../img/python/seaborn1.png" height="400" style="max-width:100%;"></a>
+</div>
+<div class="highlight highlight-source-python"><pre>sns.distplot(tips[<span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>])
+sns.distplot(tips[<span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>],<span class="pl-v">kde</span><span class="pl-k">=</span><span class="pl-c1">False</span>,<span class="pl-v">bins</span><span class="pl-k">=</span><span class="pl-c1">30</span>)
+
+sns.jointplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">kind</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>scatter<span class="pl-pds">'</span></span>)
+sns.jointplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">kind</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>hex<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> hex areas</span>
+sns.jointplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">kind</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>reg<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> regression</span>
+
+<span class="pl-c"><span class="pl-c">#</span> pairwise relationships across an entire dataframe for the *numerical* columns</span>
+sns.pairplot(tips) 
+<span class="pl-c"><span class="pl-c">#</span> color hue for categorical columns</span>
+sns.pairplot(tips, <span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>)
+
+sns.kdeplot(tips[<span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>]) <span class="pl-c"><span class="pl-c">#</span> Kernel Density Estimation plots</span>
+sns.rugplot(tips[<span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>]) <span class="pl-c"><span class="pl-c">#</span> a dash mark for every point on a univariate distribution</span></pre></div>
+<h3>
+<a id="user-content-categorical-plots" class="anchor" href="#categorical-plots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>categorical plots</h3>
+<div align="center">
+<a href="../img/python/seaborn2.png" target="_blank"><img src="../img/python/seaborn2.png" height="400" style="max-width:100%;"></a>
+</div>
+<div class="highlight highlight-source-python"><pre>sns.barplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips)
+sns.barplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">estimator</span><span class="pl-k">=</span>np.std)
+sns.countplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips)
+
+<span class="pl-c"><span class="pl-c">#</span> The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution, except for points that are determined to be “outliers” using a method that is a function of the inter-quartile range.</span>
+sns.boxplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips, <span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>rainbow<span class="pl-pds">'</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> include another categorical variable</span>
+sns.boxplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>smoker<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips, <span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>coolwarm<span class="pl-pds">"</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> for entire dataframe</span>
+sns.boxplot(<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>rainbow<span class="pl-pds">'</span></span>,<span class="pl-v">orient</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>h<span class="pl-pds">'</span></span>)
+
+<span class="pl-c"><span class="pl-c">#</span> the violin plot features a kernel density estimation of the underlying distribution.</span>
+sns.violinplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>rainbow<span class="pl-pds">'</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> include another categorical variable, parallel</span>
+sns.violinplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips, <span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Set1<span class="pl-pds">'</span></span>)
+<span class="pl-c"><span class="pl-c">#</span> non-symetric</span>
+sns.violinplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">split</span><span class="pl-k">=</span><span class="pl-c1">True</span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Set1<span class="pl-pds">'</span></span>)
+
+<span class="pl-c"><span class="pl-c">#</span> show all observations (not for huge amount of data!)</span>
+sns.stripplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips) <span class="pl-c"><span class="pl-c">#</span> in a vertical line</span>
+sns.stripplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">jitter</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> not all overlapped</span>
+sns.stripplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">jitter</span><span class="pl-k">=</span><span class="pl-c1">True</span>,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Set1<span class="pl-pds">'</span></span>)
+sns.stripplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">jitter</span><span class="pl-k">=</span><span class="pl-c1">True</span>,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Set1<span class="pl-pds">'</span></span>,<span class="pl-v">split</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> split into 2 vertical lines</span>
+sns.swarmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips) <span class="pl-c"><span class="pl-c">#</span> not overlapping at all</span>
+sns.swarmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips, <span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Set1<span class="pl-pds">"</span></span>, <span class="pl-v">split</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
+<span class="pl-c"><span class="pl-c">#</span> the two can be combined:</span>
+sns.violinplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>tip<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>rainbow<span class="pl-pds">'</span></span>)
+sns.swarmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>tip<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">color</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>black<span class="pl-pds">'</span></span>,<span class="pl-v">size</span><span class="pl-k">=</span><span class="pl-c1">3</span>)</pre></div>
+<h3>
+<a id="user-content-matrix-plots" class="anchor" href="#matrix-plots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>matrix plots</h3>
+<div class="highlight highlight-source-python"><pre>
+sns.heatmap(tips.corr())
+sns.heatmap(tips.corr(),<span class="pl-v">cmap</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>,<span class="pl-v">annot</span><span class="pl-k">=</span><span class="pl-c1">True</span>) <span class="pl-c"><span class="pl-c">#</span> will show values on the plot</span>
+pv <span class="pl-k">=</span> flights.pivot_table(<span class="pl-v">values</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>passengers<span class="pl-pds">'</span></span>,<span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>month<span class="pl-pds">'</span></span>,<span class="pl-v">columns</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>year<span class="pl-pds">'</span></span>)
+sns.heatmap(pv)
+sns.heatmap(pv,<span class="pl-v">cmap</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>magma<span class="pl-pds">'</span></span>,<span class="pl-v">linecolor</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>white<span class="pl-pds">'</span></span>,<span class="pl-v">linewidths</span><span class="pl-k">=</span><span class="pl-c1">1</span>)
+
+sns.clustermap(pv) <span class="pl-c"><span class="pl-c">#</span> similar rows and columns will be put together</span>
+sns.clustermap(pvflights,<span class="pl-v">cmap</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>,<span class="pl-v">standard_scale</span><span class="pl-k">=</span><span class="pl-c1">1</span>) <span class="pl-c"><span class="pl-c">#</span> normalize to [0,1]</span></pre></div>
+<h3>
+<a id="user-content-regression-plots" class="anchor" href="#regression-plots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>regression plots</h3>
+<div class="highlight highlight-source-python"><pre>sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips)
+sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>)
+sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>)
+sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>,
+           <span class="pl-v">markers</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>o<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>v<span class="pl-pds">'</span></span>],<span class="pl-v">scatter_kws</span><span class="pl-k">=</span>{<span class="pl-s"><span class="pl-pds">'</span>s<span class="pl-pds">'</span></span>:<span class="pl-c1">100</span>}) <span class="pl-c"><span class="pl-c">#</span> size:100</span>
+           <span class="pl-c"><span class="pl-c">#</span> details see: http://matplotlib.org/api/markers_api.html</span>
+sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> two seperate plots</span>
+sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>tip<span class="pl-pds">"</span></span>, <span class="pl-v">row</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>sex<span class="pl-pds">"</span></span>, <span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>time<span class="pl-pds">"</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips) <span class="pl-c"><span class="pl-c">#</span> four</span>
+sns.lmplot(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>total_bill<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>tip<span class="pl-pds">'</span></span>,<span class="pl-v">data</span><span class="pl-k">=</span>tips,<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>day<span class="pl-pds">'</span></span>,<span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>,<span class="pl-v">palette</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>,
+          <span class="pl-v">aspect</span><span class="pl-k">=</span><span class="pl-c1">0.6</span>,<span class="pl-v">size</span><span class="pl-k">=</span><span class="pl-c1">8</span>)</pre></div>
+<h3>
+<a id="user-content-grids" class="anchor" href="#grids" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>grids</h3>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"><span class="pl-c">#</span> general version of "pairplot"</span>
+g <span class="pl-k">=</span> sns.PairGrid(iris)
+g.map_diag(plt.hist)
+g.map_upper(plt.scatter)
+g.map_lower(sns.kdeplot)
+
+g <span class="pl-k">=</span> sns.FacetGrid(tips, <span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>time<span class="pl-pds">"</span></span>,  <span class="pl-v">row</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>smoker<span class="pl-pds">"</span></span>)
+g <span class="pl-k">=</span> g.map(plt.hist, <span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>) <span class="pl-c"><span class="pl-c">#</span> draw histograms for each catagory</span>
+g <span class="pl-k">=</span> sns.FacetGrid(tips, <span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>time<span class="pl-pds">"</span></span>,  <span class="pl-v">row</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>smoker<span class="pl-pds">"</span></span>, <span class="pl-v">hue</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>sex<span class="pl-pds">'</span></span>)
+g <span class="pl-k">=</span> g.map(plt.scatter, <span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>tip<span class="pl-pds">"</span></span>).add_legend()
+
+<span class="pl-c"><span class="pl-c">#</span> general version of "jointplot"</span>
+g <span class="pl-k">=</span> sns.JointGrid(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>total_bill<span class="pl-pds">"</span></span>, <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>tip<span class="pl-pds">"</span></span>, <span class="pl-v">data</span><span class="pl-k">=</span>tips)
+g <span class="pl-k">=</span> g.plot(sns.regplot, sns.distplot)</pre></div>
+<h2>
+<a id="user-content-pandas-built-in" class="anchor" href="#pandas-built-in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pandas (built-in)</h2>
+<div class="highlight highlight-source-python"><pre>plt.style.use(<span class="pl-s"><span class="pl-pds">'</span>ggplot<span class="pl-pds">'</span></span>)
+plt.style.use(<span class="pl-s"><span class="pl-pds">'</span>bmh<span class="pl-pds">'</span></span>)
+
+df[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>].hist()
+df[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>].plot.hist(<span class="pl-v">bins</span><span class="pl-k">=</span><span class="pl-c1">50</span>) <span class="pl-c"><span class="pl-c">#</span> parameters same as plt.hist()</span>
+
+df[<span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>].plot.kde()
+
+<span class="pl-c"><span class="pl-c">#</span> NOTICE: these methods are also be called by Series objects</span>
+df.plot.density() <span class="pl-c"><span class="pl-c">#</span> multiple lines with different colors</span>
+
+<span class="pl-c"><span class="pl-c">#</span> area chart</span>
+df.plot.area(<span class="pl-v">alpha</span><span class="pl-k">=</span><span class="pl-c1">0.4</span>) 
+
+df.plot.bar() <span class="pl-c"><span class="pl-c">#</span> x is index, y is value, category is column</span>
+df.plot.bar(<span class="pl-v">stacked</span><span class="pl-k">=</span><span class="pl-c1">True</span>) 
+
+df.plot.box() <span class="pl-c"><span class="pl-c">#</span> by=...</span>
+
+<span class="pl-c"><span class="pl-c">#</span> line chart</span>
+df.plot.line(<span class="pl-v">x</span><span class="pl-k">=</span>df.index,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>,<span class="pl-v">figsize</span><span class="pl-k">=</span>(<span class="pl-c1">12</span>,<span class="pl-c1">3</span>),<span class="pl-v">lw</span><span class="pl-k">=</span><span class="pl-c1">1</span>)
+
+df.plot.scatter(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>)
+df.plot.scatter(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>,<span class="pl-v">c</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>C<span class="pl-pds">'</span></span>,<span class="pl-v">cmap</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>coolwarm<span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">#</span> map color, or do sth like c='red'</span>
+df.plot.scatter(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>B<span class="pl-pds">'</span></span>,<span class="pl-v">s</span><span class="pl-k">=</span>df1[<span class="pl-s"><span class="pl-pds">'</span>C<span class="pl-pds">'</span></span>]<span class="pl-k">*</span><span class="pl-c1">200</span>) <span class="pl-c"><span class="pl-c">#</span> map size</span>
+
+<span class="pl-c"><span class="pl-c">#</span> alternative to scatter plot</span>
+df <span class="pl-k">=</span> pd.DataFrame(np.random.randn(<span class="pl-c1">1000</span>, <span class="pl-c1">2</span>), <span class="pl-v">columns</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>])
+df.plot.hexbin(<span class="pl-v">x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>,<span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>,<span class="pl-v">gridsize</span><span class="pl-k">=</span><span class="pl-c1">25</span>,<span class="pl-v">cmap</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Oranges<span class="pl-pds">'</span></span>)</pre></div>
+<h2>
+<a id="user-content-plotly" class="anchor" href="#plotly" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plotly</h2>
+<p>Powerful interactive visualization tool. see <a href="https://plot.ly/">https://plot.ly/</a></p>
+<h2>
+<a id="user-content-images" class="anchor" href="#images" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Images</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> <span class="pl-c1">PIL</span> <span class="pl-k">import</span> Image
+Image.open(filename) <span class="pl-c"><span class="pl-c">#</span> you should see it in a notebook</span></pre></div>
+<h2>
+<a id="user-content-jupyter-notebook-widgets-install-guide" class="anchor" href="#jupyter-notebook-widgets-install-guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jupyter Notebook Widgets <a href="https://ipywidgets.readthedocs.io/en/latest/user_install.html">install guide</a>
+</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> <span class="pl-c1">__future__</span> <span class="pl-k">import</span> print_function
+<span class="pl-k">from</span> ipywidgets <span class="pl-k">import</span> interact, interactive, fixed, interact_manual
+<span class="pl-k">import</span> ipywidgets <span class="pl-k">as</span> widgets</pre></div>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">f</span>(<span class="pl-smi">w</span>,<span class="pl-smi">b</span>,<span class="pl-smi">grid</span>,<span class="pl-smi">title</span>,<span class="pl-smi">color</span>):
+    plt.clf()
+    x <span class="pl-k">=</span> np.arange(<span class="pl-k">-</span><span class="pl-c1">1</span>,<span class="pl-c1">1</span>,<span class="pl-c1">0.01</span>)
+    plt.plot(x, w<span class="pl-k">*</span>x<span class="pl-k">+</span>b, color)
+    plt.plot(x, np.zeros(x.shape), <span class="pl-s"><span class="pl-pds">'</span>k<span class="pl-pds">'</span></span>)
+    plt.axis([<span class="pl-k">-</span><span class="pl-c1">1</span>,<span class="pl-c1">1</span>,<span class="pl-k">-</span><span class="pl-c1">3</span>,<span class="pl-c1">3</span>])
+    plt.grid(grid)
+    plt.title(title)
+<span class="pl-c"><span class="pl-c">#</span> if you want to click a button and update, use `interact_manual`</span>
+interact(f, <span class="pl-v">w</span><span class="pl-k">=</span>(<span class="pl-k">-</span><span class="pl-c1">1</span>.,<span class="pl-c1">1</span>.,<span class="pl-c1">.1</span>), <span class="pl-v">b</span><span class="pl-k">=</span>(<span class="pl-k">-</span><span class="pl-c1">3</span>,<span class="pl-c1">3</span>,<span class="pl-c1">1</span>), <span class="pl-v">grid</span><span class="pl-k">=</span><span class="pl-c1">False</span>, <span class="pl-v">title</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Enter title<span class="pl-pds">'</span></span>,
+         <span class="pl-v">color</span><span class="pl-k">=</span>{<span class="pl-s"><span class="pl-pds">'</span>red<span class="pl-pds">'</span></span>:<span class="pl-s"><span class="pl-pds">'</span>r<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>blue<span class="pl-pds">'</span></span>:<span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>green<span class="pl-pds">'</span></span>:<span class="pl-s"><span class="pl-pds">'</span>g<span class="pl-pds">'</span></span>},<span class="pl-v">continuous_update</span><span class="pl-k">=</span><span class="pl-c1">False</span>)<span class="pl-bu">;</span></pre></div>
+<div align="center">
+<a href="../img/python/widget.png" target="_blank"><img src="../img/python/widget.png" width="500" style="max-width:100%;"></a>
+</div>
+<p>For more types of widgets, click <a href="https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html">here</a>.</p>
+<h2>
+<a id="user-content-matplotlib-colortable" class="anchor" href="#matplotlib-colortable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matplotlib Colortable</h2>
+<p><a href="../img/python/colortable.jpg" target="_blank"><img src="../img/python/colortable.jpg" alt="colortable" style="max-width:100%;"></a></p>
+<h2>
+<a id="user-content-other-resources" class="anchor" href="#other-resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Resources</h2>
+<ul>
+<li><a href="http://www.labri.fr/perso/nrougier/teaching/matplotlib/">tutorial</a></li>
+<li><a href="http://matplotlib.org/gallery.html">gallery</a></li>
+<li>
+<a href="http://matplotlib.org/users/colormaps.html">Choosing colormaps</a> <code>​</code> <code>xxx(cmap=‘cmapname’)</code>
+</li>
+</ul>
+</article></body></html>
