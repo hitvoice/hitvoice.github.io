@@ -22,12 +22,12 @@
   <meta property="og:image" content="https://hitvoice.github.io/img/me.jpg" />
   <meta name="twitter:image" content="https://hitvoice.github.io/img/me.jpg" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://hitvoice.github.io/page/about/" />
+  <meta property="og:url" content="https://hitvoice.github.io/about/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Blog" />
 
   <meta name="generator" content="Hugo 0.21" />
-  <link rel="canonical" href="https://hitvoice.github.io/page/about/" />
+  <link rel="canonical" href="https://hitvoice.github.io/about/" />
   <link rel="alternate" href="https://hitvoice.github.io/index.xml" type="application/rss+xml" title="Blog">
   <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -81,7 +81,7 @@ ga('send', 'pageview');
         
           
             <li>
-              <a title="About" href="/page/about/">About</a>
+              <a title="About" href="/about/">About</a>
             </li>
           
         
@@ -161,17 +161,10 @@ ga('send', 'pageview');
 
 <p>I'm a first year M.Sc. student of <a href="http://cs.nju.edu.cn/">Department of Computer Science and Technology</a> in <a href="http://www.nju.edu.cn/">Nanjing University</a>. I received my B.Sc. degree in <a href="http://ese.nju.edu.cn/">School of Electronic Science and Engineering</a> in June 2016 from Nanjing University. In the same year, I was admitted to study for a M.Sc. degree in Nanjing University without entrance examination. I was also a member of <a href="/img/about/engineer.jpg">Excellent Engineer Training Program</a>, from Ministry of Education of China.</p>
 
-<h3 id="awards-and-honors">Awards and Honors</h3>
+<h3 id="articles-and-talks">Articles and Talks</h3>
 
 <ul>
-<li>Top 3% in <a href="http://www.datafountain.cn/#/competitions/239/intro">Sogou User Grouping Contest</a>, 2016</li>
-<li>Outstanding Student of Nanjing University, 2013</li>
-<li>People's Scholarship (first prize), 2013</li>
-</ul>
-
-<h3 id="other-articles-and-talks">Other Articles and Talks</h3>
-
-<ul>
+<li>2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese, 知乎张瑞: 浅析机器学习理论与实践) [<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&amp;mid=2247485226&amp;idx=1&amp;sn=6d5c2c5c37de0acdff3720e18bc8ca73">Wechat</a>] [<a href="https://zhuanlan.zhihu.com/p/28231483">Zhihu</a>] [<a href="http://www.sohu.com/a/161374082_500659">Sohu News</a>]</li>
 <li>2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese, 层叠注意力模型 - 实现机器阅读的正确姿势) [<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&amp;mid=2247484683&amp;idx=1&amp;sn=0033e491852330a8662f37be325952b0">link</a>]</li>
 <li>2016, Pracical Advice on Machine Learning Projects [<a href="/about/ML Advice.pdf">slide</a>]</li>
 </ul>
@@ -187,6 +180,11 @@ ga('send', 'pageview');
 <h3 id="projects">Projects</h3>
 
 <p>(click to expand)
+<details>
+  <summary><span style="color: #008AFF">Xinya: Chinese Lyrics Generation</span></summary><br>
+  <img src="/img/about/xinya.png" width="400">
+  A Chinese lyrics generation system based on generative adversarial network. Autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a &quot;realistic&quot; latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily of generation is way better than previous maximum likelyhood methods (like seq2seq).
+<br><br></details>
 <details>
   <summary><span style="color: #008AFF">Intelligent Case Management System</span></summary><br>
   <img src="/img/about/12345.png" width="300">
@@ -205,8 +203,16 @@ ga('send', 'pageview');
 <details>
   <summary><span style="color: #008AFF">NJU Exchange Notifiers</span></summary><br>
   <img src="/img/about/njuexchange.png" height="300">
-  This is a personal project, a mail notifier for notifications from <a href="http://jw.nju.edu.cn/ContentList.aspx?MType=PX-XSRK-JHS&amp;FType=XSRK&amp;res_type=introduction">the Exchange Center of Nanjing University</a>. The Exchange Center updates international exchange student programs on its website, applications for which usually close in a few days. It's simple in techniques -- just a crawler and a mail agent -- but has helped a lot of users to get notified in time!
+  This is a personal project, a mail notifier for notifications from <a href="http://jw.nju.edu.cn/ContentList.aspx?MType=PX-XSRK-JHS&amp;FType=XSRK&amp;res_type=introduction">the Exchange Center of Nanjing University</a>. The Exchange Center updates international exchange student programs on its website, applications for which usually close in a few days. It's simple in techniques -- just a crawler and a mail agent -- but has helped a lot of real users to get notified in time!
 <br><br></details></p>
+
+<h3 id="awards-and-honors">Awards and Honors</h3>
+
+<ul>
+<li>Top 3% in <a href="http://www.datafountain.cn/#/competitions/239/intro">Sogou User Grouping Contest</a>, 2016</li>
+<li>Outstanding Student of Nanjing University, 2013</li>
+<li>People's Scholarship (first prize), 2013</li>
+</ul>
 
 <h3 id="selected-finished-courses-and-certificates">Selected Finished Courses and Certificates</h3>
 

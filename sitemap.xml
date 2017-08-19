@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://hitvoice.github.io/page/about/</loc>
+    <loc>https://hitvoice.github.io/about/</loc>
   </url>
   
   <url>
@@ -34,11 +34,6 @@
   
   <url>
     <loc>https://hitvoice.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hitvoice.github.io/page/</loc>
     <priority>0</priority>
   </url>
   
