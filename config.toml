@@ -1,0 +1,82 @@
+baseurl = "https://hitvoice.github.io"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
+title = "Blog"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+disqusShortname = "rqyang"
+googleAnalytics = "UA-100355759-1"
+
+[Params]
+  subtitle = "About Machine Learning"
+  logo = "img/me.jpg"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+gcse = "012420793613416242870:adcziazi7hg" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "Runqi Yang"
+  email = "runqiyang@gmail.com"
+  #facebook = "username"
+  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "hitvoice"
+  #twitter = "username"
+  #reddit = "username"
+  #linkedin = "username"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  #instagram = "username"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  #spotify = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+
+# [[menu.main]]
+#     name = "Blog"
+#     url = ""
+#     weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "about/"
+    #url = "resume/index.html"
+    weight = 3
+
+[[menu.main]]
+    name = "Github"
+    url = "https://github.com/hitvoice"
+    weight = 2
+
+#[[menu.main]]
+#    identifier = "highlight"
+#    name = "Highlight"
+#    weight = 2
+#
+#[[menu.main]]
+#    parent = "highlight"
+#    name = "Neural Network"
+#    url = "post/nn/"
+#    weight = 1
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 1
+

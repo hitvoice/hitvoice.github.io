@@ -1,0 +1,107 @@
+---
+title: 
+subtitle:
+comments: false
+---
+<img src="/img/about/me_about.jpg" alt="pic" align="left" style="margin-right: 40px; margin-left: 60px" height="200">
+
+<div position="relative" margin-left="300px">
+    <h1> Runqi Yang <span style="font-family:STFangsong; font-size:18pt"> (杨润琦)</span> </h1>
+    <font size="+1"><b>M.Sc. Candidate </b> in <b>Computer Science</b> <br><b>Nanjing University</b> <br> <br>
+    <i class="fa fa-weixin" aria-hidden="true"></i> hitvoice<br>
+    <i class="fa fa-envelope"></i> runqiyang@gmail.com<br>
+    </font> <br><br>
+</div>
+
+### Biography
+I'm a second year M.Sc. student of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/). I received my B.Sc. degree in [School of Electronic Science and Engineering](http://ese.nju.edu.cn/) in June 2016 from Nanjing University. In the same year, I was admitted to study for a M.Sc. degree in Nanjing University without entrance examination. I was also a member of [Excellent Engineer Training Program](/img/about/engineer.jpg), from Ministry of Education of China.
+
+### Publications
+J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory*. The Thirty-Second AAAI Conference on Artificial Intelligence(**AAAI-18**).
+
+### Articles and Talks
+- 2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese, 知乎张瑞: 浅析机器学习理论与实践) [[Wechat](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247485226&idx=1&sn=6d5c2c5c37de0acdff3720e18bc8ca73)] [[Zhihu](https://zhuanlan.zhihu.com/p/28231483)] [[Sohu News](http://www.sohu.com/a/161374082_500659)]
+- 2017, Introduction to Machine Reading Comprehension [[slides](/about/intro_to_rc.pptx)]
+- 2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese, 层叠注意力模型 - 实现机器阅读的正确姿势) [[link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247484683&idx=1&sn=0033e491852330a8662f37be325952b0)]
+- 2016, Pracical Advice on Machine Learning Projects [[slides](/about/ML Advice.pdf)]
+- PaperWeely [paper notes](http://www.paperweekly.site/user/rqyang) (in Chinese)
+
+### Contributions to Open Source Projects
+- pytorch/pytorch: issue [#1687](https://github.com/pytorch/pytorch/issues/1687) 
+- facebookresearch/ParlAI: pull request [#176](https://github.com/facebookresearch/ParlAI/pull/176)
+- AIChallenger/AI_Challenger: pull request [#16#19#25](https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline)
+- my repository [DrQA](https://github.com/hitvoice/DrQA) (100+ stars)
+- my [GithubGist](https://gist.github.com/hitvoice)
+     
+### Projects
+(click to expand)
+<details>
+  <summary><span style="color: #008AFF">Xinya: Chinese Lyrics Generation</span></summary><br>
+  <img src="/img/about/xinya.png" width="400">
+  A Chinese lyrics generation system based on generative adversarial network. Autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a "realistic" latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily of generation is way better than previous maximum likelyhood methods (like seq2seq).
+<br><br></details>
+<details>
+  <summary><span style="color: #008AFF">Intelligent Case Management System</span></summary><br>
+  <img src="/img/about/12345.png" width="300">
+  A intelligent case management system for the Government Hotline Service Center of Nanjing. It integrates GIS and NLP techniques into the ordinary case management system, which enables the telephone operators to quickly mark associated locations on the map, assign cases following case assignment recommendations and inform the governors of what people in this city are complaining about through visualizations of text clustering results and hard-to-deal-with cases by outlier analysis.
+<br><br></details>
+<details>
+  <summary><span style="color: #008AFF">Graphic Design to 3D Printing</span> </summary><br>
+  <img src="/img/about/3d.png" width="300">
+  Convert 2D graphic designs to 3D-printable models. The demo above illustrates converting a SVG file to a STL model, by sampling vertices along Bezier paths, performing constrained Delaunay triangulation, and converting a 2d mesh to 3D. ([demo code](/about/svg2stl.py))
+<br><br></details>
+<details>
+  <summary><span style="color: #008AFF">Virtual Fitting Room</span></summary><br>
+  <img src="/img/about/virtual.jpg" width="300">
+  A virtual fitting system based on Kinect and 3D human models. A picture of clothes with similar posture is queried using ANN-search, and further streched by a SCAPE 3D human model which is estimated from input RGBD frames.
+<br><br></details>
+<details>
+  <summary><span style="color: #008AFF">NJU Exchange Notifiers</span></summary><br>
+  <img src="/img/about/njuexchange.png" height="300">
+  This is a personal project, a mail notifier for notifications from [the Exchange Center of Nanjing University](http://jw.nju.edu.cn/ContentList.aspx?MType=PX-XSRK-JHS&FType=XSRK&res_type=introduction). The Exchange Center updates international exchange student programs on its website, applications for which usually close in a few days. It's simple in techniques -- just a crawler and a mail agent -- but has helped a lot of real users to get notified in time!
+<br><br></details>
+
+### Awards and Honors
+- Top 3% in [Sogou User Grouping Contest](http://www.datafountain.cn/#/competitions/239/intro), 2016
+- Outstanding Student of Nanjing University, 2013
+- People's Scholarship (first prize), 2013
+
+### Selected Finished Courses and Certificates
+- Test of English as a Foreign Language (TOEFL): [104](/img/about/toefl.jpg)
+- [Data Mining](https://cs.nju.edu.cn/zlj/Course/DM_15.html)@NJU
+- [Pattern Recognition](https://cs.nju.edu.cn/wujx/teaching_PR.html)@NJU
+- [Randomized Algorithm](http://tcs.nju.edu.cn/wiki/index.php/随机算法_(Fall_2015))@NJU
+- [Combinatorics](http://tcs.nju.edu.cn/wiki/index.php/组合数学_(Fall_2015))@NJU ([notes](/about/note_combinatorics.pdf))
+- [Introduction to Distributed Algorithms](http://www.bigoh.net/wiki/index.php/Dis-alg)@NJU ([course project](/about/disalg.pdf))
+- [Computational Intelligence](https://cs.nju.edu.cn/shanglin/CI_2017.html)@NJU ([course project](/about/ga.zip))
+- Machine Learning Foundations@Coursera-NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/HbBwPTksF9hcZaTz))
+- Machine Learning Techniques@Coursera-NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/MYmNaPgJvS5gxbPx))
+- Text Mining and Analysis@Coursera-UIUC ([certificate](https://www.coursera.org/account/accomplishments/certificate/8687FWLEY3G7))
+- Parallel Programming@Coursera-EPFL ([certificate](https://www.coursera.org/account/accomplishments/certificate/PNDEJVZSXZHN))
+- Big Data Analysis with Scala and Spark@Coursera-EPFL ([certificate](https://www.coursera.org/account/accomplishments/certificate/WQPJNKH6RH4A))
+- Data Visualization@Coursera-UIUC
+- Deep Learning for Natural Language Processing ([CS224d](http://cs224d.stanford.edu/syllabus.html))@Stanford (online)
+- Convolutional Neural Networks for Visual Recognition ([CS231n](http://cs231n.stanford.edu/syllabus.html))@Stanford (online)
+
+### Miscellaneous
+- My name pronounces as "Ren-Chee" (sounding like "rent" and "cheese" without "t" and "se")
+- I love guitar, musical, drama and paiting. I had been a concert guitarist, a school drama actor, a school musical vice director and capable of music production.<details><summary>Here're some of my previous artworks (if you're interested)</summary><br>
+  <i class="fa fa-headphones" aria-hidden="true"></i> [Facade Reprise (Electronic Cover)](https://soundcloud.com/hitvoice/facade-reprisecover) as producer and mixer.<br>
+  <i class="fa fa-headphones" aria-hidden="true"></i> [In His Eyes](https://soundcloud.com/hitvoice/in-his-eyes) as recorder and mixer.<br>
+  <i class="fa fa-headphones" aria-hidden="true"></i> [After Rain (雨后)](http://music.163.com/#/song?id=427015141) as songwriter, singer and guitarist.<br>
+  <i class="fa fa-paint-brush" aria-hidden="true"></i> Some of my paintings (I'm just a beginner!)
+  {{< gallery caption-effect="fade" >}}
+  {{< figure src="/img/about/paint-bicycle-small.jpg" link="/img/about/paint-bicycle.png" caption="Dream Big" >}}
+  {{< figure src="/img/about/paint-butterfly-small.jpg" link="/img/about/paint-butterfly.png" caption="Butterfly" >}}
+  {{< figure src="/img/about/paint-hyuna-small.jpg" link="/img/about/paint-hyuna.png" caption="Red">}}
+  {{< figure src="/img/about/paint-mayj-small.jpg" link="/img/about/paint-mayj.png" caption="Worth It">}}
+  {{< figure src="/img/about/paint-murder-small.jpg" link="/img/about/paint-murder.png" caption="Murder">}}
+  {{< figure src="/img/about/paint-sea-small.jpg" link="/img/about/paint-sea.jpeg" caption="Under the Sea">}}
+  {{< figure src="/img/about/paint-snow-small.jpg" link="/img/about/paint-snow.png" caption="Snow">}}
+  {{< figure src="/img/about/paint-suicide-small.jpg" link="/img/about/paint-suicide.png" caption="Suicide">}}
+  {{< figure src="/img/about/paint-window-small.jpg" link="/img/about/paint-window.png" caption="Heartbeat">}}
+  {{< /gallery >}}
+<br><br></details>
+- Nowadays when I'm not writing code or doing research, I usually hang out with friends or take a long walk alone. I enjoying being alone and connected both!
+
+
