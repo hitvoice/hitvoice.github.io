@@ -4,8 +4,8 @@ $$
 \begin{align}
 p_i = 
 \begin{cases} 
-1-\left(y-\lfloor y\rfloor\right), \ &i=\lfloor y\rfloor \\
-y-\lfloor y\rfloor,    &i=\lfloor y\rfloor+1\\
+1-\left(y-\lfloor y\rfloor\right), \ &i=\lfloor y\rfloor \\\\
+y-\lfloor y\rfloor,    &i=\lfloor y\rfloor+1\\\\
 0    &\mbox{otherwise }
 \end{cases}
 \end{align}
