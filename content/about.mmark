@@ -17,7 +17,7 @@ comments: false
 I'm a second year M.Sc. student of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/). I received my B.Sc. degree in [School of Electronic Science and Engineering](http://ese.nju.edu.cn/) in June 2016 from Nanjing University. In the same year, I was admitted to study for a M.Sc. degree in Nanjing University without entrance examination. I was also a member of [Excellent Engineer Training Program](/img/about/engineer.jpg), from Ministry of Education of China.
 
 ### Publications
-J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory*. The Thirty-Second AAAI Conference on Artificial Intelligence(**AAAI-18**).
+J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory*. The Thirty-Second AAAI Conference on Artificial Intelligence(**AAAI-18**). [[code and data](http://www.marcpoint.com/code_with_data.zip)]
 
 ### Articles and Talks
 - 2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese, 知乎张瑞: 浅析机器学习理论与实践) [[Wechat](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247485226&idx=1&sn=6d5c2c5c37de0acdff3720e18bc8ca73)] [[Zhihu](https://zhuanlan.zhihu.com/p/28231483)] [[Sohu News](http://www.sohu.com/a/161374082_500659)]
@@ -27,18 +27,18 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 - PaperWeely [paper notes](http://www.paperweekly.site/user/rqyang) (in Chinese)
 
 ### Contributions to Open Source Projects
-- pytorch/pytorch: issue [#1687](https://github.com/pytorch/pytorch/issues/1687) 
+- pytorch/pytorch: issue [#1687](https://github.com/pytorch/pytorch/issues/1687) [#3789](https://github.com/pytorch/pytorch/issues/3789)
 - facebookresearch/ParlAI: pull request [#176](https://github.com/facebookresearch/ParlAI/pull/176)
 - AIChallenger/AI_Challenger: pull request [#16#19#25](https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline)
-- my repository [DrQA](https://github.com/hitvoice/DrQA) (100+ stars)
+- my repository [DrQA](https://github.com/hitvoice/DrQA) (100+ stars and cited by [SRU](https://github.com/taolei87/sru))
 - my [GithubGist](https://gist.github.com/hitvoice)
-     
+
 ### Projects
 (click to expand)
 <details>
   <summary><span style="color: #008AFF">Xinya: Chinese Lyrics Generation</span></summary><br>
   <img src="/img/about/xinya.png" width="400">
-  A Chinese lyrics generation system based on generative adversarial network. Autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a "realistic" latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily of generation is way better than previous maximum likelyhood methods (like seq2seq).
+  A Chinese lyrics generation system based on generative adversarial network. Autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a "realistic" latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily and variation of generation is way better than previous maximum likelyhood methods (like seq2seq).
 <br><br></details>
 <details>
   <summary><span style="color: #008AFF">Intelligent Case Management System</span></summary><br>
@@ -54,11 +54,6 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
   <summary><span style="color: #008AFF">Virtual Fitting Room</span></summary><br>
   <img src="/img/about/virtual.jpg" width="300">
   A virtual fitting system based on Kinect and 3D human models. A picture of clothes with similar posture is queried using ANN-search, and further streched by a SCAPE 3D human model which is estimated from input RGBD frames.
-<br><br></details>
-<details>
-  <summary><span style="color: #008AFF">NJU Exchange Notifiers</span></summary><br>
-  <img src="/img/about/njuexchange.png" height="300">
-  This is a personal project, a mail notifier for notifications from [the Exchange Center of Nanjing University](http://jw.nju.edu.cn/ContentList.aspx?MType=PX-XSRK-JHS&FType=XSRK&res_type=introduction). The Exchange Center updates international exchange student programs on its website, applications for which usually close in a few days. It's simple in techniques -- just a crawler and a mail agent -- but has helped a lot of real users to get notified in time!
 <br><br></details>
 
 ### Awards and Honors
