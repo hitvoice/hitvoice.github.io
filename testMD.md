@@ -24,3 +24,7 @@ A special symbol $\odot$.
 $$
 \underset{\theta}{\operatorname {argmax}}\ f(\theta)
 $$
+
+$$ 
+(\gamma^,\phi^)=\underset{\gamma,\phi}{\operatorname{argmin}} D_{\mathrm{KL}}(q(\theta,z|\gamma,\phi)|p(\theta,z|w,\alpha,\beta)) 
+$$
