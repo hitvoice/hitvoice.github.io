@@ -26,5 +26,10 @@ $$
 $$
 
 $$ 
-(\gamma^,\phi^)=\underset{\gamma,\phi}{\operatorname{argmin}} D_{\mathrm{KL}}(q(\theta,z|\gamma,\phi)|p(\theta,z|w,\alpha,\beta)) 
+(\gamma^\*,\phi^\*)=\underset{\gamma,\phi}{\operatorname{argmin}} D_{\mathrm{KL}}(q(\theta,z|\gamma,\phi)|p(\theta,z|w,\alpha,\beta)) 
 $$
+<div>
+$$ 
+(\gamma^*,\phi^*)=\underset{\gamma,\phi}{\operatorname{argmin}} D_{\mathrm{KL}}(q(\theta,z|\gamma,\phi)|p(\theta,z|w,\alpha,\beta)) 
+$$
+</div>
