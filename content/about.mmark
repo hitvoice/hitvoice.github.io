@@ -7,7 +7,7 @@ comments: false
 
 <div position="relative" margin-left="300px">
     <h1> Runqi Yang <span style="font-family:STFangsong; font-size:18pt"> (杨润琦)</span> </h1>
-    <font size="+1"><b>M.Sc. Candidate </b> in <b>Computer Science</b> <br><b>Nanjing University</b> <br> <br>
+    <font size="+1"><b>M.Sc. Student </b> in <b>Computer Science</b> <br><b>Nanjing University</b> <br> <br>
     <i class="fa fa-weixin" aria-hidden="true"></i> hitvoice<br>
     <i class="fa fa-envelope"></i> runqiyang@gmail.com<br>
     </font> <br><br>
@@ -27,10 +27,10 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 - PaperWeely [paper notes](http://www.paperweekly.site/user/rqyang) (in Chinese)
 
 ### Contributions to Open Source Projects
-- pytorch/pytorch: issue [#1687](https://github.com/pytorch/pytorch/issues/1687) [#3789](https://github.com/pytorch/pytorch/issues/3789)
+- pytorch/pytorch: bug reporting [#1687](https://github.com/pytorch/pytorch/issues/1687) [#3789](https://github.com/pytorch/pytorch/issues/3789)
 - facebookresearch/ParlAI: pull request [#176](https://github.com/facebookresearch/ParlAI/pull/176)
 - AIChallenger/AI_Challenger: pull request [#16#19#25](https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline)
-- my repository [DrQA](https://github.com/hitvoice/DrQA) (100+ stars and cited by [SRU](https://github.com/taolei87/sru))
+- my repository [DrQA](https://github.com/hitvoice/DrQA) (150+ stars and cited by [SRU](https://github.com/taolei87/sru))
 - my [GithubGist](https://gist.github.com/hitvoice)
 
 ### Projects
@@ -38,7 +38,9 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 <details>
   <summary><span style="color: #008AFF">Xinya: Chinese Lyrics Generation</span></summary><br>
   <img src="/img/about/xinya.png" width="400">
-  A Chinese lyrics generation system based on generative adversarial network. Autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a "realistic" latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily and variation of generation is way better than previous maximum likelyhood methods (like seq2seq).
+  A Chinese lyrics generation system based on generative adversarial network. It is capable of generating lyrics of desired theme and lengths, according to the given title and length templates. This is a summer research project at DeeCamp, Sinovation Ventures and won "the Best Technical Solution Award". Technically, an autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a "realistic" latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily and variation of generation is way better than previous maximum likelyhood methods (like seq2seq).
+
+  Media reports: [李开复Kaifu Li](https://mp.weixin.qq.com/s/PXiECHLR7hMUw89hS6qMoA) | [创新工场Sinovation Ventures](https://mp.weixin.qq.com/s/msurWqr8D2SxzcQTvMBoZQ) | [北京海淀Haidian Beijing](https://mp.weixin.qq.com/s/7IcwhTgDPPopAYRGDsBnAw) | [鲁豫有约A Date with Luyu](https://www.youtube.com/watch?v=sgKbtnMjJVo) | [中天新聞CTI News](https://www.youtube.com/watch?v=ITm0bVIPmOs)
 <br><br></details>
 <details>
   <summary><span style="color: #008AFF">Intelligent Case Management System</span></summary><br>
@@ -57,26 +59,29 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 <br><br></details>
 
 ### Awards and Honors
+- The Outstanding Camper Award at DeeCamp, Sinovation Ventures, 2017
 - Top 3% in [Sogou User Grouping Contest](http://www.datafountain.cn/#/competitions/239/intro), 2016
 - Outstanding Student of Nanjing University, 2013
 - People's Scholarship (first prize), 2013
 
 ### Selected Finished Courses and Certificates
 - Test of English as a Foreign Language (TOEFL): [104](/img/about/toefl.jpg)
-- [Data Mining](https://cs.nju.edu.cn/zlj/Course/DM_15.html)@NJU
-- [Pattern Recognition](https://cs.nju.edu.cn/wujx/teaching_PR.html)@NJU
-- [Randomized Algorithm](http://tcs.nju.edu.cn/wiki/index.php/随机算法_(Fall_2015))@NJU
-- [Combinatorics](http://tcs.nju.edu.cn/wiki/index.php/组合数学_(Fall_2015))@NJU ([notes](/about/note_combinatorics.pdf))
-- [Introduction to Distributed Algorithms](http://www.bigoh.net/wiki/index.php/Dis-alg)@NJU ([course project](/about/disalg.pdf))
-- [Computational Intelligence](https://cs.nju.edu.cn/shanglin/CI_2017.html)@NJU ([course project](/about/ga.zip))
-- Machine Learning Foundations@Coursera-NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/HbBwPTksF9hcZaTz))
-- Machine Learning Techniques@Coursera-NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/MYmNaPgJvS5gxbPx))
-- Text Mining and Analysis@Coursera-UIUC ([certificate](https://www.coursera.org/account/accomplishments/certificate/8687FWLEY3G7))
-- Parallel Programming@Coursera-EPFL ([certificate](https://www.coursera.org/account/accomplishments/certificate/PNDEJVZSXZHN))
-- Big Data Analysis with Scala and Spark@Coursera-EPFL ([certificate](https://www.coursera.org/account/accomplishments/certificate/WQPJNKH6RH4A))
-- Data Visualization@Coursera-UIUC
-- Deep Learning for Natural Language Processing ([CS224d](http://cs224d.stanford.edu/syllabus.html))@Stanford (online)
-- Convolutional Neural Networks for Visual Recognition ([CS231n](http://cs231n.stanford.edu/syllabus.html))@Stanford (online)
+- Nanjing University ([transcript](/img/about/transcript.png))
+  - [Data Mining](https://cs.nju.edu.cn/zlj/Course/DM_15.html)@NJU
+  - [Pattern Recognition](https://cs.nju.edu.cn/wujx/teaching_PR.html)@NJU
+  - [Randomized Algorithm](http://tcs.nju.edu.cn/wiki/index.php/随机算法_(Fall_2015))@NJU
+  - [Combinatorics](http://tcs.nju.edu.cn/wiki/index.php/组合数学_(Fall_2015))@NJU ([notes](/about/note_combinatorics.pdf))
+  - [Introduction to Distributed Algorithms](http://www.bigoh.net/wiki/index.php/Dis-alg)@NJU ([course project](/about/disalg.pdf))
+  - [Computational Intelligence](https://cs.nju.edu.cn/shanglin/CI_2017.html)@NJU ([course project](/about/ga.zip))
+- Coursera
+  - Machine Learning Foundations(機器學習基石)@NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/HbBwPTksF9hcZaTz))
+  - Machine Learning Techniques(機器學習技法)@NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/MYmNaPgJvS5gxbPx))
+  - Text Mining and Analysis@UIUC ([certificate](https://www.coursera.org/account/accomplishments/certificate/8687FWLEY3G7))
+  - Big Data Analysis with Scala and Spark@EPFL ([certificate](https://www.coursera.org/account/accomplishments/certificate/WQPJNKH6RH4A))
+  - Data Visualization@UIUC
+- self-study
+  - Deep Learning for Natural Language Processing ([CS224d](http://cs224d.stanford.edu/syllabus.html))
+  - Convolutional Neural Networks for Visual Recognition ([CS231n](http://cs231n.stanford.edu/syllabus.html))
 
 ### Miscellaneous
 - My name pronounces as "Ren-Chee" (sounding like "rent" and "cheese" without "t" and "se")
