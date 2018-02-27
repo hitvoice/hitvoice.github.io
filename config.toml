@@ -7,17 +7,17 @@ metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 disqusShortname = "rqyang"
-googleAnalytics = "UA-100355759-1"
+#googleAnalytics = "UA-100355759-1"
 
 [Params]
   subtitle = "About Machine Learning"
-  logo = "img/me.jpg"
-  favicon = "img/favicon.ico"
+  logo = "img/about/me.jpg"
+  favicon = "img/about/favicon.png"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
   comments = true
-gcse = "012420793613416242870:adcziazi7hg" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+#gcse = "012420793613416242870:adcziazi7hg" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
 #  src = "img/triangle.jpg"
