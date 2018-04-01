@@ -193,10 +193,11 @@
 <h3 id="contributions-to-open-source-projects">Contributions to Open Source Projects</h3>
 
 <ul>
-<li>pytorch/pytorch: bug reporting <a href="https://github.com/pytorch/pytorch/issues/1687">#1687</a> <a href="https://github.com/pytorch/pytorch/issues/3789">#3789</a></li>
-<li>facebookresearch/ParlAI: pull request <a href="https://github.com/facebookresearch/ParlAI/pull/176">#176</a></li>
-<li>AIChallenger/AI_Challenger: pull request <a href="https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline">#16#19#25</a></li>
-<li>my repository <a href="https://github.com/hitvoice/DrQA">DrQA</a> (150+ stars and cited by <a href="https://github.com/taolei87/sru">SRU</a>)</li>
+<li><a href="https://github.com/pytorch/pytorch">pytorch/pytorch</a>: bug reporting <a href="https://github.com/pytorch/pytorch/issues/1687">#1687</a> <a href="https://github.com/pytorch/pytorch/issues/3789">#3789</a></li>
+<li><a href="https://github.com/facebookresearch/ParlAI">facebookresearch/ParlAI</a>: pull request <a href="https://github.com/facebookresearch/ParlAI/pull/176">#176</a></li>
+<li><a href="https://github.com/facebookresearch/fairseq-py">facebookresearch/fairseq-py</a>: pull request <a href="https://github.com/facebookresearch/fairseq-py/pull/134">#134</a></li>
+<li><a href="https://github.com/AIChallenger/AI_Challenger">AIChallenger/AI_Challenger</a>: pull request <a href="https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline">#16#19#25</a></li>
+<li>my repository <a href="https://github.com/hitvoice/DrQA">DrQA</a> (170+ stars and cited by <a href="https://github.com/taolei87/sru">SRU</a>)</li>
 <li>my <a href="https://gist.github.com/hitvoice">GithubGist</a></li>
 </ul>
 
@@ -206,24 +207,34 @@
 <details>
   <summary><span style="color: #008AFF">Xinya: Chinese Lyrics Generation</span></summary><br>
   <img src="/img/about/xinya.png" width="400">
-  A Chinese lyrics generation system based on generative adversarial network. It is capable of generating lyrics of desired theme and lengths, according to the given title and length templates. This is a summer research project at DeeCamp, Sinovation Ventures and won &quot;the Best Technical Solution Award&quot;. Technically, an autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a &quot;realistic&quot; latent code based on the current context which will be decoded into a new lyric line. A n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The qualily and variation of generation is way better than previous maximum likelyhood methods (like seq2seq).</p>
+  A Chinese lyrics generation system based on generative adversarial network. It is capable of generating lyrics of desired theme and lengths, according to the given title and length templates. This is a summer research project at DeeCamp, Sinovation Ventures and won &quot;the Best Technical Solution Award&quot;. Technically, an autoencoder is used to encode a lyric line into a latent code, and the generator tries to generate a &quot;realistic&quot; latent code based on the current context which will be decoded into a new lyric line. An n-gram language model helps to improve the generated result and control the length of the generated line. The autoencoder is pretrained optimizing the cross entropy and then the GAN is trained under the WGAN objective. The quality and variation of generation are way better than previous maximum likelihood methods (like seq2seq).</p>
 
 <p>Media reports: <a href="https://mp.weixin.qq.com/s/PXiECHLR7hMUw89hS6qMoA">李开复Kaifu Li</a> | <a href="https://mp.weixin.qq.com/s/msurWqr8D2SxzcQTvMBoZQ">创新工场Sinovation Ventures</a> | <a href="https://mp.weixin.qq.com/s/7IcwhTgDPPopAYRGDsBnAw">北京海淀Haidian Beijing</a> | <a href="https://www.youtube.com/watch?v=sgKbtnMjJVo">鲁豫有约A Date with Luyu</a> | <a href="https://www.youtube.com/watch?v=ITm0bVIPmOs">中天新聞CTI News</a>
 <br><br></details>
 <details>
+  <summary><span style="color: #008AFF">Multi-Entity Aspect-Based Sentiment Analysis</span></summary><br>
+  <img src="/img/about/CEA-model.png" width="500">
+  In modern apps where users like sharing experience of using some products, there're usually multiple entities and aspects mentioned and most of the time, users' attitudes towards them are quite different. Consider this: &quot;Tried Pampers. No leakage found but his butt went red. Then I changed to Kao. It’s a bit expensive but not allergenic.&quot; Traditional aspect-based sentiment analysis will not be able to cope with complex fine-grained sentiment analysis tasks like this. A neural network architecture is designed to tackle this problem. Attention mechanism and multi-turn memory network help the model to learn complex relations among entities, aspects, and sentiments. 9% higher accuracy is achieved compared with the previous best model. This work is accepted as a conference paper of AAAI'18. [<a href="/about/ME-ABSA.pdf">paper</a>] [<a href="http://www.marcpoint.com/code_with_data.zip">code and data</a>]
+<br><br></details>
+<details>
   <summary><span style="color: #008AFF">Intelligent Case Management System</span></summary><br>
   <img src="/img/about/12345.png" width="300">
-  A intelligent case management system for the Government Hotline Service Center of Nanjing. It integrates GIS and NLP techniques into the ordinary case management system, which enables the telephone operators to quickly mark associated locations on the map, assign cases following case assignment recommendations and inform the governors of what people in this city are complaining about through visualizations of text clustering results and hard-to-deal-with cases by outlier analysis.
+  An intelligent case management system for the Government Hotline Service Center of Nanjing. It integrates GIS and NLP techniques into the ordinary case management system, which enables the telephone operators to quickly mark associated locations on the map, assign cases following case assignment recommendations and inform the governors of what people in this city are complaining about by visualizations of text clustering results and hard-to-deal-with cases by outlier analysis.
+<br><br></details>
+<details>
+  <summary><span style="color: #008AFF">Umassif Bakery Auto-checkout System</span></summary><br>
+  <img src="/img/about/bread.jpg" width="400">
+  The system detects what bread the customer picks and generates the shopping list instantly with a single RGB camera. Behind the scenes, a mobilenet-SSD model is trained to detect more than 40 kinds of bread in the pictures and achieves &gt;99% mAP. The system was deployed in Nov 2017 and works ever since.
 <br><br></details>
 <details>
   <summary><span style="color: #008AFF">Graphic Design to 3D Printing</span> </summary><br>
   <img src="/img/about/3d.png" width="300">
-  Convert 2D graphic designs to 3D-printable models. The demo above illustrates converting a SVG file to a STL model, by sampling vertices along Bezier paths, performing constrained Delaunay triangulation, and converting a 2d mesh to 3D. (<a href="/about/svg2stl.py">demo code</a>)
+  Convert 2D graphic designs to 3D-printable models. The demo above illustrates converting an SVG file to an STL model, by sampling vertices along Bezier paths, performing constrained Delaunay triangulation, and converting a 2d mesh to 3D. (<a href="/about/svg2stl.py">demo code</a>)
 <br><br></details>
 <details>
   <summary><span style="color: #008AFF">Virtual Fitting Room</span></summary><br>
   <img src="/img/about/virtual.jpg" width="300">
-  A virtual fitting system based on Kinect and 3D human models. A picture of clothes with similar posture is queried using ANN-search, and further streched by a SCAPE 3D human model which is estimated from input RGBD frames.
+  A virtual fitting system based on Kinect and 3D human models. A picture of clothes with similar posture is queried using ANN-search and further stretched by a SCAPE 3D human model which is estimated from input RGBD frames.
 <br><br></details></p>
 
 <h3 id="awards-and-honors">Awards and Honors</h3>
