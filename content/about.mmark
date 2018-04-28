@@ -19,21 +19,6 @@ I'm a second year M.Sc. student of [Department of Computer Science and Technolog
 ### Publications
 J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory*. The Thirty-Second AAAI Conference on Artificial Intelligence(**AAAI-18**). [[pdf](/about/ME-ABSA.pdf)] [[code and data](http://www.marcpoint.com/code_with_data.zip)]
 
-### Articles and Talks
-- 2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese, 知乎张瑞: 浅析机器学习理论与实践) [[Wechat](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247485226&idx=1&sn=6d5c2c5c37de0acdff3720e18bc8ca73)] [[Zhihu](https://zhuanlan.zhihu.com/p/28231483)] [[Sohu News](http://www.sohu.com/a/161374082_500659)]
-- 2017, Introduction to Machine Reading Comprehension [[slides](/about/intro_to_rc.pptx)]
-- 2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese, 层叠注意力模型 - 实现机器阅读的正确姿势) [[link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247484683&idx=1&sn=0033e491852330a8662f37be325952b0)]
-- 2016, Pracical Advice on Machine Learning Projects [[slides](/about/ML Advice.pdf)]
-- PaperWeely [paper notes](http://www.paperweekly.site/user/rqyang) (in Chinese)
-
-### Contributions to Open Source Projects
-- [pytorch/pytorch](https://github.com/pytorch/pytorch): bug reporting [#1687](https://github.com/pytorch/pytorch/issues/1687) [#3789](https://github.com/pytorch/pytorch/issues/3789)
-- [facebookresearch/ParlAI](https://github.com/facebookresearch/ParlAI): pull request [#176](https://github.com/facebookresearch/ParlAI/pull/176)
-- [facebookresearch/fairseq-py](https://github.com/facebookresearch/fairseq-py): pull request [#134](https://github.com/facebookresearch/fairseq-py/pull/134)
-- [AIChallenger/AI_Challenger](https://github.com/AIChallenger/AI_Challenger): pull request [#16#19#25](https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline)
-- my repository [DrQA](https://github.com/hitvoice/DrQA) (170+ stars and cited by [SRU](https://github.com/taolei87/sru))
-- my [GithubGist](https://gist.github.com/hitvoice)
-
 ### Projects
 (click to expand)
 <details>
@@ -69,9 +54,23 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
   A virtual fitting system based on Kinect and 3D human models. A picture of clothes with similar posture is queried using ANN-search and further stretched by a SCAPE 3D human model which is estimated from input RGBD frames.
 <br><br></details>
 
+### Contributions to Open Source Projects
+- [pytorch/pytorch](https://github.com/pytorch/pytorch): bug reporting [#1687](https://github.com/pytorch/pytorch/issues/1687) [#3789](https://github.com/pytorch/pytorch/issues/3789)
+- [facebookresearch/ParlAI](https://github.com/facebookresearch/ParlAI): pull request [#176](https://github.com/facebookresearch/ParlAI/pull/176)
+- [facebookresearch/fairseq-py](https://github.com/facebookresearch/fairseq-py): pull request [#134](https://github.com/facebookresearch/fairseq-py/pull/134)
+- [AIChallenger/AI_Challenger](https://github.com/AIChallenger/AI_Challenger): pull request [#16#19#25](https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline)
+- my repository [DrQA](https://github.com/hitvoice/DrQA) (180+ stars and cited by [SRU](https://github.com/taolei87/sru))
+- my [GithubGist](https://gist.github.com/hitvoice)
+
+### Articles and Talks
+- 2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese, 知乎张瑞: 浅析机器学习理论与实践) [[Wechat](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247485226&idx=1&sn=6d5c2c5c37de0acdff3720e18bc8ca73)] [[Zhihu](https://zhuanlan.zhihu.com/p/28231483)] [[Sohu News](http://www.sohu.com/a/161374082_500659)]
+- 2017, Introduction to Machine Reading Comprehension [[slides](/about/intro_to_rc.pptx)]
+- 2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese, 层叠注意力模型 - 实现机器阅读的正确姿势) [[link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247484683&idx=1&sn=0033e491852330a8662f37be325952b0)]
+- 2016, Pracical Advice on Machine Learning Projects [[slides](/about/ML Advice.pdf)]
+- PaperWeely [paper notes](http://www.paperweekly.site/user/rqyang) (in Chinese)
+
 ### Awards and Honors
 - The Outstanding Camper Award at DeeCamp, Sinovation Ventures, 2017
-- Top 3% in [Sogou User Grouping Contest](http://www.datafountain.cn/#/competitions/239/intro), 2016
 - Outstanding Student of Nanjing University, 2013
 - People's Scholarship (first prize), 2013
 
