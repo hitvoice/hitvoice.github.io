@@ -14,10 +14,10 @@ comments: false
 </div>
 
 ### Biography
-I'm a third year M.Sc. student of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/). I received my B.Sc. degree in [School of Electronic Science and Engineering](http://ese.nju.edu.cn/) in June 2016 from Nanjing University. In the same year, I was admitted to study for a M.Sc. degree in Nanjing University without entrance examination. I was also a member of [Excellent Engineer Training Program](/img/about/engineer.jpg), from Ministry of Education of China.
+I'm a third year M.Sc. student of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/). I received my B.Sc. degree in [School of Electronic Science and Engineering](http://ese.nju.edu.cn/) in June 2016 from Nanjing University. In the same year, I was admitted to study for a M.Sc. degree in Nanjing University without entrance examination. I was also a member of Excellent Engineer Training Program, from Ministry of Education of China. After graduation, I am going to work as an NLP engineer in Alime X Lab, Alibaba.
 
 ### Publications
-J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory*. The Thirty-Second AAAI Conference on Artificial Intelligence(**AAAI-18**). [[pdf](/about/ME-ABSA.pdf)] [[code and data](http://www.marcpoint.com/code_with_data.zip)]
+J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory*. The Thirty-Second AAAI Conference on Artificial Intelligence(**AAAI-18**). [[link](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17036)] [[pdf](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/download/17036/16171)] [[code and data](http://www.marcpoint.com/code_with_data.zip)]
 
 ### Projects
 (click to expand)
@@ -55,11 +55,11 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 <br><br></details>
 
 ### Contributions to Open Source Projects
+- my repository [DrQA](https://github.com/hitvoice/DrQA) (250+ stars, on [DWANBench](https://dawn.cs.stanford.edu//benchmark/#squad) leaderboard)
 - [pytorch/pytorch](https://github.com/pytorch/pytorch): bug reporting [#1687](https://github.com/pytorch/pytorch/issues/1687) [#3789](https://github.com/pytorch/pytorch/issues/3789)
-- [pytorch/fairseq-py](https://github.com/pytorch/fairseq-py): pull request [#134](https://github.com/pytorch/fairseq-py/pull/134)
+- [pytorch/fairseq](https://github.com/pytorch/fairseq): pull request [#134](https://github.com/pytorch/fairseq-py/pull/134)
 - [facebookresearch/ParlAI](https://github.com/facebookresearch/ParlAI): pull request [#176](https://github.com/facebookresearch/ParlAI/pull/176)
 - [AIChallenger/AI_Challenger](https://github.com/AIChallenger/AI_Challenger): pull request [#16#19#25](https://github.com/AIChallenger/AI_Challenger/commits/master/Baselines/keypoint_baseline)
-- my repository [DrQA](https://github.com/hitvoice/DrQA) (180+ stars and cited by [SRU](https://github.com/taolei87/sru))
 - my [GithubGist](https://gist.github.com/hitvoice)
 
 ### Articles and Talks
@@ -68,7 +68,6 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 - 2017, Introduction to Machine Reading Comprehension [[slides](/about/intro_to_rc.pptx)]
 - 2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese, 层叠注意力模型 - 实现机器阅读的正确姿势) [[link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247484683&idx=1&sn=0033e491852330a8662f37be325952b0)]
 - 2016, Pracical Advice on Machine Learning Projects [[slides](/about/ML Advice.pdf)]
-- PaperWeely [paper notes](http://www.paperweekly.site/user/rqyang) (in Chinese)
 
 ### Awards and Honors
 - The Outstanding Camper Award at DeeCamp, Sinovation Ventures, 2017
@@ -82,8 +81,8 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
   - [Pattern Recognition](https://cs.nju.edu.cn/wujx/teaching_PR.html)@NJU
   - [Randomized Algorithm](http://tcs.nju.edu.cn/wiki/index.php/随机算法_(Fall_2015))@NJU
   - [Combinatorics](http://tcs.nju.edu.cn/wiki/index.php/组合数学_(Fall_2015))@NJU ([notes](/about/note_combinatorics.pdf))
-  - [Introduction to Distributed Algorithms](http://www.bigoh.net/wiki/index.php/Dis-alg)@NJU ([course project](/about/disalg.pdf))
-  - [Computational Intelligence](https://cs.nju.edu.cn/shanglin/CI_2017.html)@NJU ([course project](/about/ga.zip))
+  - [Introduction to Distributed Algorithms](http://www.bigoh.net/wiki/index.php/Dis-alg)@NJU
+  - [Computational Intelligence](https://cs.nju.edu.cn/shanglin/CI_2017.html)@NJU
 - Coursera
   - Deep Learning Specialization@deeplearning.ai ([certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/UE4PLBQC4H35))
   - Machine Learning Foundations(機器學習基石)@NTU ([certificate](https://www.coursera.org/account/accomplishments/certificate/HbBwPTksF9hcZaTz))
@@ -94,6 +93,7 @@ J.Yang, **R.Yang**, C.Wang and J.Xie. *Multi-Entity Aspect-Based Sentiment Analy
 - self-study
   - Deep Learning for Natural Language Processing ([CS224d](http://cs224d.stanford.edu/syllabus.html))
   - Convolutional Neural Networks for Visual Recognition ([CS231n](http://cs231n.stanford.edu/syllabus.html))
+  -  Cutting Edge Deep Learning For Coders ([fast.ai](https://course.fast.ai/part2.html))
 
 ### Miscellaneous
 - My name pronounces as "Ren-Chee" (sounding like "rent" and "cheese" without "t" and "se")
