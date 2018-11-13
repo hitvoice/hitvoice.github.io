@@ -7,29 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>runqiyang@gmail.com (Runqi Yang)</managingEditor>
     <webMaster>runqiyang@gmail.com (Runqi Yang)</webMaster>
-    <lastBuildDate>Wed, 19 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hitvoice.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Neural Network</title>
-      <link>https://hitvoice.github.io/post/nn-advance/</link>
-      <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
-      <author>runqiyang@gmail.com (Runqi Yang)</author>
-      <guid>https://hitvoice.github.io/post/nn-advance/</guid>
-      <description>&lt;p&gt;This is about some advanced topics on neural networks, including initialization, regularization, training &amp;amp; debugging tips and so on.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Neural Network</title>
+      <title>Deep Learning</title>
       <link>https://hitvoice.github.io/post/nn-basic/</link>
-      <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       <author>runqiyang@gmail.com (Runqi Yang)</author>
       <guid>https://hitvoice.github.io/post/nn-basic/</guid>
-      <description>&lt;p&gt;This is a fully detailed note about basic neural network concepts, including loss functions, activation functions, back propagation and so on.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

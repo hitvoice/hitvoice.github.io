@@ -1,17 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
+    
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Neural Network</title>
-  <meta property="og:title" content="Neural Network" />
-  <meta name="twitter:title" content="Neural Network" />
-  <meta name="description" content="Basic Concepts">
-  <meta property="og:description" content="Basic Concepts">
-  <meta name="twitter:description" content="Basic Concepts">
-  <meta name="author" content="Runqi Yang"/>
+  <title>Deep Learning - Blog</title>
+  <meta property="og:title" content="Deep Learning" />
+  <meta name="twitter:title" content="Deep Learning" />
+  <meta name="description" content="From Basics to Cutting Edge Techniques">
+  <meta property="og:description" content="From Basics to Cutting Edge Techniques">
+  <meta name="twitter:description" content="From Basics to Cutting Edge Techniques">
+  <meta name="author" content="Runqi Yang"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Blog",
+    
+    "url": "https://hitvoice.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://hitvoice.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://hitvoice.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://hitvoice.github.io/post/nn-basic/",
+          "name": "Deep learning"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Runqi Yang"
+  },
+  "headline": "Deep Learning",
+  "description" : "
+",
+  "inLanguage" : "en",
+  "wordCount": 241,
+  "datePublished" : "2018-11-13T00:00:00",
+  "dateModified" : "2018-11-13T00:00:00",
+  "image" : "https://hitvoice.github.io/img/about/me.jpg",
+  "keywords" : [ "theory" ],
+  "mainEntityOfPage" : "https://hitvoice.github.io/post/nn-basic/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://hitvoice.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://hitvoice.github.io/img/about/me.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Deep Learning" />
+<meta property="og:description" content="From Basics to Cutting Edge Techniques">
+<meta property="og:image" content="https://hitvoice.github.io/img/about/me.jpg" />
+<meta property="og:url" content="https://hitvoice.github.io/post/nn-basic/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Blog" />
+  <meta name="twitter:title" content="Deep Learning" />
+  <meta name="twitter:description" content="From Basics to Cutting Edge Techniques">
+  <meta name="twitter:image" content="https://hitvoice.github.io/img/about/me.jpg" />
+  <meta name="twitter:card" content="summary" />
   <link href='https://hitvoice.github.io/img/about/favicon.png' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://hitvoice.github.io/img/about/me.jpg" />
   <meta name="twitter:image" content="https://hitvoice.github.io/img/about/me.jpg" />
@@ -21,20 +102,76 @@
   <meta property="og:site_name" content="Blog" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://hitvoice.github.io/post/nn-basic/" />
   <link rel="alternate" href="https://hitvoice.github.io/index.xml" type="application/rss+xml" title="Blog">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://hitvoice.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://hitvoice.github.io/css/syntax.css" /><link rel="stylesheet" href="https://hitvoice.github.io/css/codeblock.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://hitvoice.github.io/css/syntax.css" /><link rel="stylesheet" href="https://hitvoice.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://hitvoice.github.io">Blog</a>
+    </div>
 
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Github" href="https://github.com/hitvoice">Github</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Blog" href="https://hitvoice.github.io">
+            <img class="avatar-img" src="https://hitvoice.github.io/img/about/me.jpg" alt="Blog" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
 
 
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -81,69 +218,12 @@
     </div>
 </div>
 
-</head>
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://hitvoice.github.io">Blog</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-        
-          
-            <li>
-              <a title="Tags" href="/tags">Tags</a>
-            </li>
-          
-        
-          
-            <li>
-              <a title="Github" href="https://github.com/hitvoice">Github</a>
-            </li>
-          
-        
-          
-            <li>
-              <a title="About" href="/about/">About</a>
-            </li>
-          
-        
-
-        
-
-        
-      </ul>
-    </div>
-
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        
-          <a title="Blog" href="https://hitvoice.github.io">
-            <img class="avatar-img" src="https://hitvoice.github.io/img/about/me.jpg" alt="Blog" />
-          </a>
-        
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
-
-
-    
   
   
   
+
+
 
 
 
@@ -153,29 +233,35 @@
   <header class="header-section ">
     
     <div class="intro-header no-img">
-      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Neural Network</h1>
+              
+                <h1>Deep Learning</h1>
+              
+              
+              
                 
-                  
-                    <h2 class="post-subheading">Basic Concepts</h2>
-                  
+                  <h2 class="post-subheading">From Basics to Cutting Edge Techniques</h2>
                 
-                
-                  <span class="post-meta">
+              
+              
+                <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 19, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 13, 2018
   
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Runqi Yang
   
   
 </span>
 
 
-                
+              
             </div>
           </div>
         </div>
@@ -189,273 +275,35 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>This is a fully detailed note about basic neural network concepts, including loss functions, activation functions, back propagation and so on.
-</p>
+        <p></p>
 
-<h3 id="the-neural-network-model">The Neural Network Model</h3>
+<p>Here're several fully-detailed notes compiled by myself about deep learning, covering topics from basic deep learning concepts to cutting-edge deep learning techniques.</p>
 
-<p>Online demos to interatively training your own neural network on a toy dataset with cool layer-by-layer visualization can be found in:</p>
+<p>Deep learning is a quickly growing field and any static note will soon be out-of-date. So I put these notes on Github and keep updating them. You can discuss with me about these details or directly contribute what you know!</p>
 
-<ul>
-<li><a href="http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html">ConvertJS</a>.</li>
-<li><a href="http://playground.tensorflow.org/">tensorflow playground</a>.</li>
-</ul>
-
-<p>Which can give you a first impression on what neural networks do.</p>
-
-<p>Most common design involves the stacking of affine transformations followed by element-wise non-linearity.</p>
-
-<div align="center">
-    <img src="/img/nn/nn-intro.png" alt="nn-intro" width="500">
-</div>
-
-<p>Forward propagation:</p>
-
-<p><span  class="math">\[\begin{align}
-z^{(l+1)} &= W^{(l)} a^{(l)} + b^{(l)}\\
-a^{(l+1)} &= f(z^{(l+1)})\\
-h_{W,b}(x) &= a^{(n_l)}
-\end{align}\]</span></p>
-
-<p>The input layer can be embeddings of raw entities, which can be treated as resulting from an &quot;embedding layer&quot; or &quot;lookup layer&quot;. The weights of the output layer can be seen as embeddings of output classes.</p>
-
-<h3 id="loss-functions">Loss functions</h3>
-
-<h4 id="square-loss">Square Loss</h4>
-
-<p><span  class="math">\[
-J(\theta)=
- \frac{1}{m} \sum_{i=1}^m \left( \frac{1}{2} \left\| h_{\theta}(x^{(i)}) - y^{(i)} \right\|^2 \right)
-\]</span></p>
-
-<p>It's equivalant to maximizing the log-likelihood of a conditional Gaussian distribution.</p>
-
-<h4 id="crossentropy-loss">Cross-Entropy Loss</h4>
-
-<p><span  class="math">\[J(\theta)=
- \frac{1}{m} \sum_{i=1}^m 
- -\log\left(\hat y_t^{(i)}\right)\]</span></p>
-
-<p>where <span  class="math">\(t\)</span> is the index of the correct class.
-When using cross-entropy loss, it is assumed that the network’s output is transformed using the softmax transformation, in which case increasing the mass assigned to the correct class means decreasing the mass assigned to all the other classes.
-Label smoothing regularizes a model based on a softmax with <span  class="math">\(k\)</span> output values by replacing the hard 0 and 1 classification targets with targets of <span  class="math">\(\frac{\epsilon}{k}\)</span> and <span  class="math">\(1−\frac{k−1}{k}\epsilon\)</span>, respectively. It prevents the model to learn larger and larger weights, making more extreme predictions forever to reach the unreachable 0 and 1 target without discouraging correct classification (unlike weight decay).</p>
-
-<h4 id="hinge-loss">Hinge Loss</h4>
-
-<p><span  class="math">\[
-J(\theta)=
- \frac{1}{m} \sum_{i=1}^m 
- \max\left(0,1-\left(\hat y_t^{(i)} - \hat y_k^{(i)}\right) \right)
-\]</span></p>
-
-<p>where <span  class="math">\(k=\operatorname{argmax}_{j\neq t}\hat y_j\)</span>. Hinge loss attempts to score the correct class above all other classes with a margin of at least 1.</p>
-
-<h4 id="ranking-loss-hinge">Ranking Loss (hinge)</h4>
-
-<p>The goal is to score correct items above incorrect ones, given pairs of correct and incorrect items <span  class="math">\(x_p\)</span> and <span  class="math">\(x_n\)</span>. Such training situations arise when we have only positive examples, and generate negative examples by corrupting a positive example.</p>
-
-<p><span  class="math">\[
-J(\theta)=
-\frac{1}{m} \sum_{i=1}^m\max \left( 0,1- \left( h_{\theta}(x^{(i)}_p)-h_{\theta}(x^{(i)}_n)\right) \right)
-\]</span></p>
-
-<p>The objective is to score correct inputs over incorrect ones with a margin of at least 1.</p>
-
-<h4 id="ranking-loss-log">Ranking Loss (log)</h4>
-
-<div>
-$$
-J(\theta)=
-\frac{1}{m} \sum_{i=1}^m\log \left( 1+ \exp\left(-\left( h_{\theta}(x^{(i)}_p)-h_{\theta}(x^{(i)}_n)\right)\right) \right)
-$$
-</div>
-
-<h4 id="rating-prediction">Rating Prediction</h4>
-
-<p>Assume that all the ratings lie in <span  class="math">\([1,K]\)</span>. Real-valued scores are allowed for ground-truth ratings that are an average over the evaluations of several human annotators.
-Using a softmax layer as the last layer, we get a probability output <span  class="math">\(\hat p\)</span>, which is seen as the probability of each discrete integer rating. We predict the scoring by <span  class="math">\(\hat y = r^T\hat p\)</span>, where <span  class="math">\(r^T=[1\ 2\ \dots\ K]\)</span>, and optimize the model over the following cost function:</p>
-
-<p><span  class="math">\[
-J(\theta)=\frac{1}{m}\sum_{k=1}^m 
-\operatorname{KL}\left(
-  p^{(k)}\left\|\hat p^{(k)}
-\right)\right.
-+\frac{\lambda}{2}\|\theta\|_2^2\ .
-\]</span></p>
-
-<p>The sparse target distribution <span  class="math">\(p\)</span> is defined as:</p>
-
-<p><span  class="math">\[
-\begin{align}
-p_i = 
-\begin{cases} 
-1-\left(y-\lfloor y\rfloor\right), \ &i=\lfloor y\rfloor \\
-y-\lfloor y\rfloor,    &i=\lfloor y\rfloor+1\\
-0    &\mbox{otherwise }
-\end{cases}
-\end{align}
-\]</span></p>
-
-<p>for <span  class="math">\(1\leq i\leq K\)</span>. For example, if <span  class="math">\(K=5\)</span> and <span  class="math">\(y=3.6\)</span>, <span  class="math">\(p=[0, 0, 0.4, 0.6, 0]\)</span>. See <a href="http://arxiv.org/pdf/1503.00075.pdf">this paper</a>.</p>
-
-<h3 id="activation-function">Activation function</h3>
-
-<p><span  class="math">\(f(\sum_iW_ix_i+b)\equiv f(z)\)</span>
-<figure><img src="/img/nn/activations.png" alt="activations"></figure></p>
-
-<h4 id="sigmoid-function">Sigmoid function</h4>
-
-<p><span  class="math">\[
-f(z) = \frac{1}{1+\exp(-z)}
-\]</span></p>
-
-<p>whose derivative is <span  class="math">\(f'(z) = f(z) (1-f(z))\)</span> (<span  class="math">\(=a(1-a)\)</span> in implementation). The derivative of the softmax funtion is the same.
-An interesting property is <span  class="math">\(1-f(z) = f(-z)\)</span> (which can be seen intuitively from the plot above).</p>
-
-<h4 id="hyperbolic-tangent-rescaled-sigmoid">Hyperbolic tangent (rescaled sigmoid)</h4>
-
-<p><span  class="math">\[\begin{align}
-f(z) &= \tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}\\
-&= 2\operatorname{Sigmoid}(2z)-1.
-\end{align}\]</span></p>
-
-<p>whose derivative is <span  class="math">\(f'(z) = 1- (f(z))^2\)</span> (<span  class="math">\(=1-a^2\)</span> in implementation).
-Hyperbolic tangent is better than sigmoid function in most cases. It resembles the identity function more closely which makes training the tanh network easier.</p>
-
-<p>The widespread saturation of sigmoidal units can make gradient-based learning very difficult. For this reason, their use as hidden units in feedforward networks is now discouraged. However, in models holding additional requirements that rule out the use of piecewise linear activation functions, sigmoidal units are still appealing despite the drawbacks of saturation.</p>
-
-<h4 id="hard-tanh">Hard tanh</h4>
-
-<p><span  class="math">\[
-\begin{align}
-f(z)= 
-\begin{cases} 
--1 \ &\mbox{if } x<-1 \\
-0    &\mbox{if } -1<=x<=1\\
-1    &\mbox{if } x>1
-\end{cases}
-\end{align}
-\]</span></p>
-
-<p>Hard tangent performs silimarly to tanh, but is computationally cheaper.</p>
-
-<h4 id="rectified-linear-function-relu">Rectified linear function (ReLU)</h4>
-
-<p>(neither bounded nor continuously differentiable)</p>
-
-<p><span  class="math">\[
-f(z) = \max(0,x).
-\]</span></p>
-
-<p>Rectified linear units and all of these generalizations of them are based on the principle that models are easier to optimize if their behavior is closer to linear.
-Combine with ReLu, it's better to initialize <span  class="math">\(W\)</span> with identity matrix or its scaled version and initialize biases with zeros (starting from simple averaging).
-As a rule of thumb, ReLU units work better than tanh, and tanh works better than sigmoid.</p>
-
-<h4 id="generalizations-of-relu">Generalizations of ReLU</h4>
-
-<p><strong>Slope methods</strong></p>
-
-<p><span  class="math">\[
-f(z)=\max(0,z)+\alpha\min(0,z)
-\]</span></p>
+<blockquote>
+<p>To see the math formulas correctly, install this chrome plugin first: <a href="https://github.com/orsharir/github-mathjax">github-mathjax</a>.</p>
+</blockquote>
 
 <ul>
-<li>Absolute value rectification: \(\alpha=-1\), \(f(z)=|z|\). It is used in object recognition from images, where it makes sense to seek features that are invariant under a polarity reversal of the input illumination</li>
-<li>Leaky ReLU: fix \(\alpha\) to a small value like 0.01.</li>
-<li>Parametric ReLU (PReLu): treats \(\alpha\) as a learnable parameter.</li>
+<li><strong><a href="https://github.com/hitvoice/notes/blob/master/knowledge/deep%20learning/basics.md">Deep Learning Basics</a></strong>. This chapter introduces the motivation and basic concepts of deep learning.</li>
+<li><strong><a href="https://github.com/hitvoice/notes/blob/master/knowledge/deep%20learning/loss.md">Loss Functions</a></strong>. This chapter introduces the loss functions used in deep learning, from basic classfication/regression loss to some fancy losses designed for ranking, rating prediction, object detection, etc.</li>
+<li><strong><a href="https://github.com/hitvoice/notes/blob/master/knowledge/deep%20learning/activation.md">Activation Functions</a></strong>. This chapter introduces the activation functions used in deep learning, thier variaints and comparisons.</li>
+<li><strong><a href="https://github.com/hitvoice/notes/blob/master/knowledge/deep%20learning/optimization.md">Optimization Techniques</a></strong>. This chapter first talks about the details of the basic gradient descent, and then discuss some key aspects of deep learning model training, including parameter initialization, optimization algorithms, learning rate scheduling, normalization and regularization.</li>
+<li><strong><a href="https://github.com/hitvoice/notes/blob/master/knowledge/deep%20learning/architectures.md">Model Architectures</a></strong>. This is a collection of &quot;design patterns&quot; for deep learning, especially for natural language processing. It covers the design of projection layers, embedding layers, sequence encoding layers, sequence aggregation layers, the alignment of two sequences and so on. All these architectures are paired with the reference to the original paper or the open-source code. You can treat this as an (incomplete) roadmap to the existing building blocks for deep learning models.</li>
 </ul>
 
-<p><strong>Exponential linear units (ELU)</strong></p>
+        
+          <div class="blog-tags">
+            
+              <a href="https://hitvoice.github.io/tags/theory/">theory</a>&nbsp;
+            
+          </div>
+        
 
-<p><span  class="math">\[
-\begin{align}f(z)= 
-\begin{cases} 
-x \ &\mbox{if } x\geq 0 \\
-\alpha (e^x-1)    &\mbox{if }x<0
-\end{cases}\end{align}
-\]</span></p>
+        
 
-<p><strong>Maxout networks</strong></p>
-
-<p><span  class="math">\[
-f(z) = \max_{j\in[1,k]}W_j^Tx+b_j.
-\]</span></p>
-
-<p>If <span  class="math">\(k=2\)</span>, it simplifies to</p>
-
-<p><span  class="math">\[
-f(z) = \max(W_1^Tx+b_1, W_2^Tx+b_2)
-\]</span></p>
-
-<p><figure><img src="/img/nn/maxout.png" alt="maxout"></figure>
-All slope methods are special cases of this form. The Maxout neuron therefore enjoys all the benefits of a ReLU unit (linear regime of operation, no saturation) and does not have its drawbacks (dying ReLU). However, unlike the ReLU neurons it multiplies the number of parameters for every single neuron, leading to a high total number of parameters.</p>
-
-<h4 id="indentical-function">Indentical function</h4>
-
-<p>It's equivalant to compute:</p>
-
-<p><span  class="math">\[
-h = f(VUx+b)
-\]</span></p>
-
-<p>If <span  class="math">\(U\)</span> produces <span  class="math">\(q\)</span> outputs, then <span  class="math">\(U\)</span> and <span  class="math">\(V\)</span> together contain only <span  class="math">\((n + p)q\)</span> parameters, while <span  class="math">\(W\)</span> contains <span  class="math">\(np\)</span> parameters. For small <span  class="math">\(q\)</span>, this can be a considerable saving in parameters. It comes at the cost of constraining the linear transformation to be <strong>low-rank</strong>, but these low-rank relationships are often sufficient. Linear hidden units thus offer an effective way of reducing the number of parameters in a network.</p>
-
-<h4 id="last-words-for-activation-functions">Last words for activation functions</h4>
-
-<p>It is very rare to mix and match different types of neurons in the same network, even though there is no fundamental problem with doing so.</p>
-
-<p>&quot;What neuron type should I use?&quot; Use the ReLU non-linearity, be careful with your learning rates and possibly monitor the fraction of &quot;dead&quot; units in a network. If this concerns you, give Leaky ReLU or Maxout a try. Never use sigmoid. Try tanh, but expect it to work worse than ReLU/Maxout.</p>
-
-<h3 id="optimization">Optimization</h3>
-
-<p>The basic update rule for gradient descent:</p>
-
-<p><span  class="math">\[
-\begin{align}
-W_{ij}^{(l)} &= W_{ij}^{(l)} - \alpha \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) \\
-b_{i}^{(l)} &= b_{i}^{(l)} - \alpha \frac{\partial}{\partial b_{i}^{(l)}} J(W,b)
-\end{align}
-\]</span></p>
-
-<p>where <span  class="math">\(\alpha\)</span> is the learning rate. The <strong>back propagation</strong> algorithm gives an efficient way to compute these partial derivatives. The idea behind back propagation is that we can re-use derivatives computed for higher layers in computing derivatives for lower layers (in terms of back propagated error).
-The computation of the partial derivative for a single example is as follows (and computation is usually parallelized):</p>
-
-<ol>
-<li>Perform a feedforward pass, computing the activations for layers <span  class="math">\(L_2\)</span>, <span  class="math">\(L_3\)</span>, up to the output layer <span  class="math">\(L_{nl}\)</span>, using the equations defining the forward propagation steps</li>
-<li>For the output layer (layer <span  class="math">\(n_l\)</span>), set <span  class="math">\( \delta^{(n_l)} =a^{(n_l)}-y\)</span></li>
-<li>For <span  class="math">\(l=n_l−1,n_l−2,n_l−3,\dots,2\)</span> (there's no &quot;error&quot; in input layer), set
-<span  class="math">\(\delta^{(l)} = \left((W^{(l)})^T \delta^{(l+1)}\right) \bullet f'(z^{(l)})\)</span></li>
-<li>Compute the desired partial derivatives for a single training example:</li>
-</ol>
-
-<p><span  class="math">\[
-\begin{align}
-\nabla_{W^{(l)}} J(W,b;x,y) &= \delta^{(l+1)} (a^{(l)})^T+\lambda W^{(l)}, \\
-\nabla_{b^{(l)}} J(W,b;x,y) &= \delta^{(l+1)}.
-\end{align}
-\]</span></p>
-
-<p>The <span  class="math">\(\bullet\)</span> denotes the element-wise product operator (also called the Hadamard product). The same extension goes for <span  class="math">\(f(\cdot)\)</span> and <span  class="math">\(f'(\cdot)\)</span>. <span  class="math">\(\lambda\)</span> is the regularization parameter. The partial derivatives are then sum up (and normalized by the number of training examples if they should match the cost function) to get the partial derivative w.r.t a whole batch (or minibatch). Since the back propagation is hard to implement and prone to tiny errors and bugs, remember to perform <a href="http://ufldl.stanford.edu/wiki/index.php/Gradient_checking_and_advanced_optimization">gradient checking</a> after implementation. View <a href="/img/nn/gradient-checking.png">this</a> common asked question about gradient checking.</p>
-
-<p>A clean python implementation and illustration for neural network can be found <a href="/html/nn/demo.html">here</a>.</p>
-
-<p>To learn about more neural network architectures, see <a href="https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba">this blog post</a>.</p>
-
-<p>To learn about advanced topics on neural networks, click &quot;Next Post&quot; below :)</p>
-
-<h3 id="reference">Reference</h3>
-
-<ul>
-<li><a href="http://cs224d.stanford.edu/lectures/CS224d-Lecture5.pdf">Stanford CS224d Lecture 5</a></li>
-<li><a href="http://cs224d.stanford.edu/lectures/CS224d-Lecture6.pdf">Stanford CS224d Lecture 6</a></li>
-<li><a href="http://cs224d.stanford.edu/lectures/CS224d-Lecture8.pdf">Stanford CS224d Lecture 8</a> (<a href="http://cs224d.stanford.edu/notebooks/vanishing_grad_example.html">Vanishing gradient example</a>)</li>
-<li><a href="http://cs224d.stanford.edu/midterm/midterm_solutions.pdf">Stanford CS224d Midterm Solutions</a></li>
-<li>Stanford CS231n: <a href="http://cs231n.github.io/neural-networks-case-study/">Minimal net example</a></li>
-<li>Stanford CS231n: <a href="http://cs231n.github.io/neural-networks-1/#intro">Neural Networks Part 1: Setting up the Architecture</a></li>
-<li><a href="http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/">http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/</a></li>
-<li><a href="http://arxiv.org/pdf/1510.00726">A primer on neural network models for natural language processing</a></li>
-<li><a href="http://www.deeplearningbook.org/">Deep Learning Book</a></li>
-</ul>
+        
       </article>
 
       
@@ -466,16 +314,13 @@ The computation of the partial derivative for a single example is as follows (an
             </li>
           
           
-            <li class="next">
-              <a href="https://hitvoice.github.io/post/nn-advance/" data-toggle="tooltip" data-placement="top" title="Neural Network">Next Post &rarr;</a>
-            </li>
-          
         </ul>
       
 
 
       
         
+          
           <div class="disqus-comments">
             <div id="disqus_thread"></div>
 <script>
@@ -498,6 +343,7 @@ The computation of the partial derivative for a single example is as follows (an
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           </div>
+          
         
         
       
@@ -515,16 +361,16 @@ The computation of the partial derivative for a single example is as follows (an
               <li>
                 <a href="mailto:runqiyang@gmail.com" title="Email me">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/hitvoice" title="GitHub">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
@@ -534,8 +380,8 @@ The computation of the partial derivative for a single example is as follows (an
             <a href="https://hitvoice.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -548,8 +394,10 @@ The computation of the partial derivative for a single example is as follows (an
             
           
 
-          &nbsp;&bull;&nbsp;
-          2017
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2018
+          
 
           
             &nbsp;&bull;&nbsp;
@@ -566,14 +414,16 @@ The computation of the partial derivative for a single example is as follows (an
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://hitvoice.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
 <script src="https://hitvoice.github.io/js/load-photoswipe.js"></script>
+
+
 
 
 
