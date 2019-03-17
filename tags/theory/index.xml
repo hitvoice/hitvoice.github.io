@@ -18,7 +18,7 @@
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       <author>runqiyang@gmail.com (Runqi Yang)</author>
       <guid>https://hitvoice.github.io/post/nn-basic/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here&amp;rsquo;re several fully-detailed notes compiled by myself about deep learning, covering topics from basic deep learning concepts to cutting-edge deep learning techniques.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,8 +27,7 @@
       <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
       <author>runqiyang@gmail.com (Runqi Yang)</author>
       <guid>https://hitvoice.github.io/post/dmnotes/</guid>
-      <description>&lt;p&gt;This post aims to share a list of notes (compiled by myself) on some important machine learning topics. Most of the concepts are mathematical, but after all, math is the most precise language!
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This post aims to share a list of notes (compiled by myself) on some important machine learning topics. Most of the concepts are mathematical, but after all, math is the most precise language!&lt;/p&gt;</description>
     </item>
     
   </channel>
