@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Theory on Blog</title>
+    <title>theory on Blog</title>
     <link>https://hitvoice.github.io/tags/theory/</link>
-    <description>Recent content in Theory on Blog</description>
+    <description>Recent content in theory on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>runqiyang@gmail.com (Runqi Yang)</managingEditor>
     <webMaster>runqiyang@gmail.com (Runqi Yang)</webMaster>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       <author>runqiyang@gmail.com (Runqi Yang)</author>
       <guid>https://hitvoice.github.io/post/nn-basic/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;re several fully-detailed notes compiled by myself about deep learning, covering topics from basic deep learning concepts to cutting-edge deep learning techniques.&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>

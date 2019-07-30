@@ -3,13 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hitvoice.github.io/</loc>
+    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hitvoice.github.io/post/nn-basic/</loc>
     <lastmod>2018-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://hitvoice.github.io/post/</loc>
+    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/tags/</loc>
+    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/tags/theory/</loc>
+    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hitvoice.github.io/post/python/</loc>
     <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hitvoice.github.io/tags/programming/</loc>
+    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -22,37 +52,7 @@
   </url>
   
   <url>
-    <loc>https://hitvoice.github.io/</loc>
-    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hitvoice.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hitvoice.github.io/post/</loc>
-    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hitvoice.github.io/tags/programming/</loc>
-    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hitvoice.github.io/tags/</loc>
-    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hitvoice.github.io/tags/theory/</loc>
-    <lastmod>2018-11-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
