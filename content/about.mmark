@@ -17,9 +17,9 @@ comments: false
 I'm a NLP engineer @Alibaba. I received my M.Sc. degree in Computer Science in 2019 and B.Sc. degree in Electronic Engineering in 2016, both from Nanjing University. 
 
 ### Publications
-**Runqi Yang**, Jianhai Zhang, Xing Gao, Feng Ji, and Haiqing Chen. "Simple and Effective Text Matching with Richer Alignment Features". In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (**ACL19**) [[pdf](https://www.aclweb.org/anthology/P19-1465)] [[github](https://github.com/hitvoice/RE2)]
-
-Jun Yang, **Runqi Yang**, Chongjun Wang, and Junyuan Xie. "Multi-entity aspect-based sentiment analysis with context, entity and aspect memory." In Thirty-Second AAAI Conference on Artificial Intelligence (**AAAI18**) [[link](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17036)] [[pdf](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/download/17036/16171)] [[code and data](http://www.marcpoint.com/code_with_data.zip)]
+- (**ACL19**) Simple and Effective Text Matching with Richer Alignment Features 
+(1st author, [pdf](https://www.aclweb.org/anthology/P19-1465) | [github](https://github.com/hitvoice/RE2))
+- (**AAAI18**) Multi-Entity Aspect-Based Sentiment Analysis with Context, Entity and Aspect Memory (2nd author, [link](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17036) | [pdf](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/download/17036/16171) | [code and data](http://www.marcpoint.com/code_with_data.zip))
 
 ### Contributions to Open Source Projects
 - my repository, implementation of [DrQA](https://github.com/hitvoice/DrQA) (300+ stars, on [DWANBench](https://dawn.cs.stanford.edu//benchmark/#squad) leaderboard)
@@ -30,16 +30,15 @@ Jun Yang, **Runqi Yang**, Chongjun Wang, and Junyuan Xie. "Multi-entity aspect-b
 - my [GithubGist](https://gist.github.com/hitvoice)
 
 ### Articles and Talks
-- 2018, Introduction to Text Generation [[slides](/about/Introduction to Text Generation.pptx)]
-- 2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese, 知乎张瑞: 浅析机器学习理论与实践) [[Wechat](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247485226&idx=1&sn=6d5c2c5c37de0acdff3720e18bc8ca73)] [[Zhihu](https://zhuanlan.zhihu.com/p/28231483)] [[Sohu News](http://www.sohu.com/a/161374082_500659)]
-- 2017, Introduction to Machine Reading Comprehension [[slides](/about/intro_to_rc.pptx)]
-- 2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese, 层叠注意力模型 - 实现机器阅读的正确姿势) [[link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247484683&idx=1&sn=0033e491852330a8662f37be325952b0)]
+- 2018, Introduction to Text Generation ([slides](/about/Introduction to Text Generation.pptx))
+- 2017, interview with Zhihu machine learning team, Machine Learning Theory and Practice (in Chinese) ([link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247485226&idx=1&sn=6d5c2c5c37de0acdff3720e18bc8ca73))
+- 2017, Introduction to Machine Reading Comprehension ([slides](/about/intro_to_rc.pptx))
+- 2017, interview with iFLYTEK Research, Attention-over-Attention: A Way Towards Machine Reading Comprehension (in Chinese) ([link](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247484683&idx=1&sn=0033e491852330a8662f37be325952b0))
 - 2016, Pracical Advice on Machine Learning Projects [[slides](/about/ML Advice.pdf)]
 
 ### Awards and Honors
-- The Outstanding Camper Award at DeeCamp, Sinovation Ventures, 2017
-- Outstanding Student of Nanjing University, 2013
-- People's Scholarship (first prize), 2013
+- 2017, The Outstanding Camper Award at DeeCamp, Sinovation Ventures
+- 2013, Outstanding Student of Nanjing University
 
 ### Miscellaneous
 - My name pronounces as "Ren-Chee" (sounding like "rent" and "cheese" without "t" and "se")
@@ -62,4 +61,4 @@ Jun Yang, **Runqi Yang**, Chongjun Wang, and Junyuan Xie. "Multi-entity aspect-b
 <br><br></details>
 - Nowadays when I'm not at work, I usually hang out with friends or take a long walk alone. I enjoy being alone and connected both!
 
-
+(Last updated: 2019/07)
